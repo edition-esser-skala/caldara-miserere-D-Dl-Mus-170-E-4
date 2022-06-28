@@ -1,0 +1,17 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Miserere
+genre: psalm
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 ob, 2 vl, 2 vla, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-Dl
+    shelfmark: Mus.2170-E-4
+    date: 1730–1744
+    rism: 212006727
+    url: https://digital.slub-dresden.de/id426603710
+    license: public domain
+    principal: true
+imslp:
