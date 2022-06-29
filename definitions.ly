@@ -10,7 +10,7 @@ senzaRip = \markup \remark "senza Rip."
 
 
 tempoMiserere = \tempoMarkup "Adagio"
-% tempoEtSecundum = \tempoMarkup "Andante"
+tempoEtSecundum = \tempoMarkup "Andante"
 % tempoTibiSoli = \tempoMarkup "A capella"
 % tempoEcceEnimIn = \tempoMarkup "Vivace"
 % tempoEtInPeccatis = \tempoMarkup "Adagio"

@@ -39,3 +39,47 @@ MiserereAltoLyrics = \lyricmode {
   _ %15
   am. %16 finis
 }
+
+EtSecundumAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoEtSecundum
+      \set Score.currentBarNumber = #17
+    R1
+    \mvTr c4\pE^\soloE g' fis2
+    g4 b2 a8([ g)]
+    fis8. e16 d4 r d8 d %20
+    es4 e f es?8 es
+    es d r4 r es8 g
+    c,4 c r8 c f es
+    d4 d r8 d es f
+    g2 f %25
+    es d
+    c b
+    r f'
+    fis g8.([ fis16)] g4
+    r2 r8 g a g %30
+    fis8.[( g16] a2) g4~
+    g fis g2
+    R1*20 %52
+    R1\fermata \bar "||" %53 finis
+  }
+}
+
+EtSecundumAltoLyrics = \lyricmode {
+  Et se -- cun -- %18
+  dum mul -- ti --
+  tu -- di -- nem mi -- se -- %20
+  ra -- ti -- o -- num tu --
+  a -- rum, de -- le,
+  de -- le in -- i -- qui --
+  ta -- tem, in -- i -- qui --
+  ta -- _ %25
+  _ tem
+  me -- am,
+  de --
+  le, de -- le
+  in -- i -- qui -- %30
+  ta -- tem __
+  me -- am.
+}

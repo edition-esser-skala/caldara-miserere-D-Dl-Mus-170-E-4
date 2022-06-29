@@ -41,3 +41,48 @@ MiserereSopranoLyrics = \lyricmode {
   tu -- %15
   am. %16 finis
 }
+
+EtSecundumSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoEtSecundum
+      \set Score.currentBarNumber = #17
+    \mvTr g'4\pE^\soloE c h2
+    c4 es2 d8([ c)]
+    b!8. a16 g4 r2
+    r4 a8 a b4 h %20
+    c b8 b b a r4
+    r b8 d g,4 g
+    r8 g c b a4 a
+    r8 b d es f2~
+    f4 es2 d4~ %25
+    d c2 b4~
+    b a b2
+    R1
+    r2 b
+    h c8.([ h16)] c4 %30
+    r8 c d c b8.([ c16)] d8([ es)]
+    b4( a) g2
+    R1*20 %52
+    R1\fermata \bar "||" %53 finis
+  }
+}
+
+EtSecundumSopranoLyrics = \lyricmode {
+  Et se -- cun -- %17
+  dum mul -- ti --
+  tu -- di -- nem
+  mi -- se -- ra -- ti -- %20
+  o -- num tu -- a -- rum,
+  de -- le, de -- le
+  in -- i -- qui -- ta -- tem,
+  in -- i -- qui -- ta --
+  _ _ %25
+  _ tem __
+  me -- am,
+
+  de --
+  le, de -- le %30
+  in -- i -- qui -- ta -- tem
+  me -- am. %32 finis
+}

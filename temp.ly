@@ -1,61 +1,5 @@
 MiserereOrgano = {
   \relative c {
-    \clef bass
-    \key g \dorian \time 4/4 \tempoMiserere
-    r4 \mvTr g'2\fE-\tutti g4
-    g2 fis
-    r4 g2 g4
-    f!1
-    es2 h c2
-    d es
-    d1\fermata
-    \clef treble << { r4 d' b fis } \\ { r2 r4 d } >>
-    \clef "treble_8" b fis g \clef bass g
-    es h c d
-    es e f2
-    es4 d8 c b4 a8 g
-    c2 d~
-    d cis
-    d1 \noBreak
-    g,\fermata \bar "||"
-    \key c \dorian \newSpacingSection \tepoEtSecundum
-      \mvTr c8\pE-\solo d es c g' f es d \noBreak
-    es d c c' d c b a
-    g f es d c b c a
-    d e fis d g g, g' g,
-    c' c, c' c, f f g a
-    b b, d b es d c b
-    c d es c f g a f
-    b4 b, r8 b c d
-    es f g a b b, d b
-    c d es f g g, b g
-    es' c f f, b'\f a g f
-    g es f f, b c\p d b
-    a g a d g a b g
-    f es f d es d c es
-    d e fis d g, a b c
-    d c d d, g'\f f es d
-    c a d d, g g'4\p fis8
-    g es f g c, d es c
-    f, f g a b b' g es
-    d b c d es f g es
-    e2 f8 f as f
-    es es es es des16 c b8 b'4~
-    b as2 ges4~
-    ges f e4. c8
-    f b, c c f, f' as f
-    des b' c c, f f, f' es
-    d c d b es es, es'4
-    d c g'8 g, h g
-    c4 r8 c as4 r8 as
-    b4 r8 b es4 r8 es
-    as,4 r as' g g es c
-    f g16 as b8 b, es f16 g as8 as,
-    d es16 f g8 f es as g g,
-    c, c'16\f d es8 c f4. f8\p
-    f4 fis g g,
-    c8\f b as g as as'16 g f8 es \noBreak
-    f d g g, c2\fermata \bar "||"
     \clef treble \key f \dorian \time 2/2 \newSpacingSection \tempoTibiSoli
       \mvTr c''2\fE-\tutti des \noBreak
     a b4 as
@@ -264,12 +208,8 @@ MiserereOrgano = {
   }
 }
 
-et se -- cun -- dum mul -- ti -- tu -- di -- nem mi -- se -- ra -- ti -- o -- num tu -- a -- rum,
-de -- le in -- i -- qui -- ta -- tem me -- am.
-Am -- pli -- us la -- va me ab in -- i -- qui -- ta -- te me -- a,
-et a pec -- ca -- to me -- o mun -- da me.
-Quo -- ni -- am in -- i -- qui -- ta -- tem me -- am e -- go co -- gno -- sco,
-et pec -- ca -- tum me -- um con -- tra me est sem -- per.
+
+
 Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
 ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
 Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
