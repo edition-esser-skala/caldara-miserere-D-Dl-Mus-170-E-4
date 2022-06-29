@@ -82,7 +82,7 @@
   %       \new FiguredBass { \MiserereBassFigures }
   %     >>
   %     \layout { }
-  %     \midi { \tempo 4 = 90 }
+  %     \midi { \tempo 4 = 70 }
   %   }
   % }
   % \bookpart {
@@ -229,7 +229,7 @@
   %       \new FiguredBass { \TibiSoliBassFigures }
   %     >>
   %     \layout { }
-  %     \midi { \tempo 4 = 90 }
+  %     \midi { \tempo 4 = 110 }
   %   }
   % }
   \bookpart {

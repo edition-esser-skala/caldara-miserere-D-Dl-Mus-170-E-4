@@ -7,8 +7,8 @@ MiserereViolaII = {
     r4 d2\fE b4
     c2 a
     r4 b2 b4
-    d2. g,4
-    c g g2 %5
+    d2. f,4-\critnote
+    c' g g2 %5
     d g
     d'1\fermata
     R1
