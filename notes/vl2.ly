@@ -148,3 +148,50 @@ AudituiViolinoII = {
     d1\fermata \bar "||" %114 finis
   }
 }
+
+AverteViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #115
+    c'8\fE c, r c' es d es d
+    es d r c h c h c
+    b a! r b a b a b
+    as g r h c es, f g
+    c,4^\adlibitumE r r r8 c'\pE
+    h c h c b a! r b %120
+    a b a b as g r g
+    f es d b es g f b,
+    es4 r8 es as g as g
+    as4 a8 f b b, r b'
+    a b a b as g r f16 es %125
+    d4 r8 d es f g as
+    b as b b, es4 r8 es\fE
+    g f g f g f r b
+    a! b a b as g r c
+    h c h c b as r e %130
+    f as, b c f4 r8 f\pE
+    as g as g f es! r es
+    des des d d es4 r8 c
+    des c des c des c r c
+    f f g g as f g es %135
+    c des es es as,4 r8 as'
+    g c as a b b, r f'\f
+    as g as g as g r f\pE
+    e f e f es d! r es
+    d es d es des c r e %140
+    f b as e f b, c c
+    f4 r8 f h,4 r8 h
+    c c es c h c h c
+    h c r c\fE es d es d
+    es d r g,\pE c c es c %145
+    f as b d, es g as c,
+    d f g h, c4 r8 c
+    g' f g g, c4 r8 es'
+    d( es) d( es) c c, r d'
+    c( d) c( d) b b,-\critnote r h' %150
+    c b16 as? g f es d c8 as'([ g fis)]
+    g2-\adlibitumE c,4 r8 h'
+    c es, f g c,4 r\fermata \bar "||" %153 finis
+  }
+}

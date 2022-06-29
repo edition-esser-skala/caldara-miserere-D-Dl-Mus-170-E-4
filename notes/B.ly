@@ -213,4 +213,38 @@ AudituiBassoLyrics = \lyricmode {
   hu -- mi -- li -- a --
   ta. %114 finis
 }
+
+AverteBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #115
+    R1*27 %141
+    r4 \mvTr f8\pE^\solo as g8.([ as16)] g([ f)] es([ d)]
+    c4 r8 g' as([ g)] as g
+    as g r4 r r8 h
+    c f,16 f f8 f f es r c' %145
+    as[ f16. es32] d8[ b'] g[ es16. d32] c8[ as']
+    f[ d16. c32] h8[ g'] es[ g c] c,
+    g'4. g8 c,4 r8 c'
+    h c16 c h8 c b a! r b
+    a b16 b a8 b as g r h %150
+    c[ b16 as] g[ f es d] c8[ as' g] fis
+    g4.^\adlibitum g8 c,4 r
+    R1\fermata \bar "||" %153 finis
+  }
+}
+
+AverteBassoLyrics = \lyricmode {
+  Ne pro -- ji -- ci -- as %142
+  me a fa -- ci -- e
+  tu -- a, et
+  spi -- ri -- tum san -- ctum tu -- um ne %145
+  au -- _ _ _
+  _ _ _ fe --
+  ras a me, et
+  spi -- ri -- tum san -- ctum tu -- um, et
+  spi -- ri -- tum san -- ctum tu -- um ne %150
+  au -- _ _ fe --
+  ras a me. %152 finis
 }

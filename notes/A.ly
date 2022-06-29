@@ -178,3 +178,37 @@ AudituiAltoLyrics = \lyricmode {
   hu -- mi -- li -- a --
   ta. %114 finis
 }
+
+AverteAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #115
+    R1*3
+    r2 r4 r8 \mvTr g'\pE^\solo
+    es4.(^\adlibitum d8) c4 r8 g'
+    as g as g16 g e8 f r f %120
+    f f f f16 f d8 es es es
+    as4.( g16[ f] g8) b as4
+    g r8 b c b r b
+    c as f es d8.([ c16)] b8 f'
+    ges f ges f d es as4~ %125
+    as8[ f] d[ c16 b] g'8[ d] es[ as]
+    g4 f es r
+    R1*25 %152
+    R1\fermata \bar "||" %153 finis
+  }
+}
+
+AverteAltoLyrics = \lyricmode {
+  A -- %118
+  ver -- te, a --
+  ver -- te fa -- ci -- em tu -- am, a -- %120
+  ver -- te fa -- ci -- em tu -- am a pec --
+  ca -- tis me --
+  is, et o -- mnes in --
+  i -- qui -- ta -- tes me -- as, in --
+  i -- qui -- ta -- tes me -- as de -- %125
+  _ _ _
+  _ _ le. %127 finis
+}

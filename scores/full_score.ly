@@ -298,84 +298,135 @@
   %     \midi { \tempo 2. = 45 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Auditui meo"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AudituiOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AudituiOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AudituiViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AudituiViolinoII
+  %           }
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vla"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AudituiViolaI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AudituiViolaII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AudituiSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AudituiSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AudituiAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AudituiAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AudituiTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AudituiTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AudituiBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AudituiBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AudituiOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AudituiBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 105 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Auditui meo"
+    \subsection "Averte faciem tuam"
     \addTocEntry
+    \paper { systems-per-page = #2 }
     \score {
       <<
         \new StaffGroup <<
           \new GrandStaff <<
-            \set GrandStaff.instrumentName = "ob"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \AudituiOboeI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \AudituiOboeII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \AudituiViolinoI
+              \AverteViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \AudituiViolinoII
-            }
-          >>
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vla"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \AudituiViolaI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \AudituiViolaII
+              \AverteViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AudituiSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \AudituiSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AudituiAlto }
+            \new Voice = "Alto" { \dynamicUp \AverteAlto }
           }
-          \new Lyrics \lyricsto Alto \AudituiAltoLyrics
+          \new Lyrics \lyricsto Alto \AverteAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AudituiTenore }
+            \new Voice = "Tenore" { \dynamicUp \AverteTenore }
           }
-          \new Lyrics \lyricsto Tenore \AudituiTenoreLyrics
+          \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AudituiBasso }
+            \new Voice = "Basso" { \dynamicUp \AverteBasso }
           }
-          \new Lyrics \lyricsto Basso \AudituiBassoLyrics
+          \new Lyrics \lyricsto Basso \AverteBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AudituiOrgano
+            \AverteOrgano
           }
         >>
-        \new FiguredBass { \AudituiBassFigures }
+        \new FiguredBass { \AverteBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 105 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

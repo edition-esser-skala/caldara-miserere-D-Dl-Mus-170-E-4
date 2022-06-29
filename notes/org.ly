@@ -294,3 +294,92 @@ AudituiBassFigures = \figuremode {
   r8 <7 [_!]>4. <4>4 <_+>
   <_!>1 %114 finis
 }
+
+AverteOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoAverte
+      \set Score.currentBarNumber = #115
+    \mvTr c'8\fE-\solo-\rip c, r c' es d es d
+    es d r c h c h c
+    b a! r b a b a b
+    as g r h c es, f g
+    c,4^\adlibitumE r r r8 \mvTr c'\pE-\senzaRip
+    h c h c b a! r b %120
+    \clef bass a b a b as g r g
+    f es d b es g f b,
+    es es, r es' as g as g
+    as as, a' f b b, r b'
+    a b a b as g r f16 es %125
+    d4 r8 d es f g as
+    b as b b, es es, r \mvTr es'\fE-\rip
+    g f g f g f r b
+    a! b a b as g r c
+    h c h c b as r e %130
+    f as, b c f,4 r8 \mvTr f'\pE-\senzaRip
+    as g as g f es! r es
+    des des d d es es, r c'
+    des c des c des c r c
+    f f g g as f g es %135
+    c des es es, as4 r8 as'
+    g c as a b b, r \mvTr f'\f-\rip
+    as g as g as g r \mvTr f\pE-\org
+    e f e f es d! r es
+    d es d es des c r e %140
+    f b as e f b, c c
+    f f, r f' h,4 r8 h
+    c c, es' c h c h c
+    h c r \mvTr c\fE-\rip es d es d
+    es d r \mvTr g,\pE-\org c c es c %145
+    f as b d, es g as c,
+    d f g h, c c, r c'
+    g' f g g, c c, r c''
+    h c h c b a! r b
+    a b a b as g r f %150
+    es r h r c as'[ g fis]
+    g4^\adlibitumE g, c r8 \mvTr h'\fE-\rip
+    c es, f g c,4 r\fermata \bar "||" %153 finis
+  }
+}
+
+AverteBassFigures = \figuremode {
+  r2 <6>8 <6!> <6> <6!> %115
+  <6> <6!>4. <7->8 <5> <7-> <5>
+  <4!> <6>4 <5>8 <6> <5> <6> <5>
+  <6 4 2!> <\t \t \t>4 <6> <[6]>8 <_-> <_!>
+  r1
+  <7->8 <5> <7-> <5> <4!> <6>4 <5>8 %120
+  <6> <5> <6> <6> <4> <6>4 q8
+  <_->4. <7-> <_->8 <\t>
+  r2 <5>8 <6> <5> <6>
+  <5>4 <6>8 <7>2 <5>8
+  <7- 5> <5 3> <7- 5> <5 3> <6 4> <6>4 <_->8 %125
+  <5->4. <\t>4 \bo <[6 _-]>8 \bc <[6 \l]>4
+  \bo <6 [4]> \bc <5 [3]>2.
+  <6>8 <6 _-> <6> <6 _-> <6> <6 _->4 <[5 _!]>8
+  <7-> <5> <7-> <5> <4> <6>4 <5>8
+  <7-> <5> <7-> <5> <4!> <6>4 <6 5>8 %130
+  <_-> <[6]> <6 5 [_-]> <_!> <[_-]>2
+  <6>8 <6-> <6> <6-> q <6>4 q8
+  q4 q8 <5-> <5>4. <6->8
+  <5-> <6-> <5-> <6-> <[6]> <6->4 q8
+  <6- 3>4 <\t 3> <5>8 <6! _-> <6>4 %135
+  <6->8 <\t> <5 4-> <\t 3>2 <[6]>8
+  <6!> <5 _!> <6> <5-> <_->4. q8
+  <6> <6!> <6> <6!> <6> <6!>4 <_->8
+  <7-> <5> <7-> <8> <4!> <6>4 <[5]>8
+  q <5> <6> <5> <6 4 2!> <\t \t \t>4 <6>8 %140
+  <_->8 q <6> q <_-> <[_-]> <4> <_!>
+  <_->2 <6>
+  r <7->8 <5> <7-> <5>
+  <7-> <5>4. <6>8 <6!> <6> <6!>
+  <6> <6!>4 \bo <[6] _!>8 <4> \bc <[3]>4. %145
+  <_->8 <[6]>4 <6>8 <5> <[6]>4 <6->8
+  \bo <[_!]> \bc <[6]> <_!> <[6]> r2
+  <4>4 <_!>2.
+  <7->8 <5> <7-> <5> <4!> <6>4 <5>8
+  <7-> <5> <7-> <5> <6 4 2> <6>4 <6 4!>8 %150
+  <6>4 q r8 <6> <5 _!> <6 [_!]>
+  <4>4 <_!>2 r8 \bo <[6]>
+  r <6> \bc <[_-]> <_!> r2 %153 finis
+}

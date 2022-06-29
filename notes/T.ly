@@ -178,3 +178,41 @@ AudituiTenoreLyrics = \lyricmode {
   hu -- mi -- li -- a --
   ta. %114 finis
 }
+
+AverteTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #115
+    R1*16 %130
+    r4 r8 \mvTr c\pE^\soloE as8.([ g16)] f4
+    f'8 es! f es des c r c
+    b des16 c b8 as g8. f16 es4
+    r as8 as b([ as)] b as
+    des4. c16[ b] c8[ d] es4~ %135
+    es8[ des16 c] b4 as r8 f'
+    e e16 e f8 c des8. c16 c4
+    r2 r4 c8 f,
+    des'([ c)] des c a! b b b
+    f'([ b,)] b b e4 c16[ b as g] %140
+    as8[ des] c4. b16[ as] g4
+    f r r2
+    R1*10 %152
+    R1\fermata \bar "||" %153 finis
+  }
+}
+
+AverteTenoreLyrics = \lyricmode {
+  Cor mun -- dum %131
+  cre -- a in me, De -- us, et
+  spi -- ri -- tum re -- ctum in -- no -- va
+  in vi -- sce -- ri -- bus
+  me -- _ _ _ %135
+  _ is, et
+  spi -- ri -- tum re -- ctum in -- no -- va
+  in vi --
+  sce -- ri -- bus me -- is, in vi --
+  sce -- ri -- bus me -- _ %140
+  _ _ _ _
+  is. %42 finis
+}

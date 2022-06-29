@@ -1,45 +1,5 @@
 MiserereOrgano = {
   \relative c {
-
-    \clef "treble_8" \key c \dorian \newSpacingSection \tempoAverteFaciem
-      \mvTr c8\pE-\solo-\rip c, r c' es d es d \noBreak
-    es d r c h c h c
-    b a r b a b a b
-    as g r h c es, f g
-    c,4 r r r8 c'-\senzaRip
-    h c h c b a r b
-    \clef bass a b a b as g r g
-    f es d b es g f b,
-    es es, r es' as g as g
-    as as, a' f b b, r b'
-    a b a b as g r f16 es
-    d4 r8 d es f g as
-    b as b b, es es, r es'-\rip
-    g f g f g f r b
-    a b a b as g r c
-    h c h c b as r e
-    f as, b c f,4 r8 f'-\senzaRip
-    as g as g f es r es
-    des des d d es es, r c'
-    des c des c des c r c
-    f f g g as f g es
-    c des es es, as4 r8 as'
-    g c as a b b, r \mvTr f'\f-\rip
-    as g as g as g r \mvTr f\pE-\org
-    e f e f es d!  es
-    d es d es des c r e
-    f b as e f b, c c
-    f f, r f' h,4 r8 h
-    c^\critnote c, es' c h c h c
-    h c r c-\rip es d es d
-    es d r g,-\org c c es c
-    f as b d, es g as c,
-    d f g h, c c, r c'
-    g' f g g, c c, r c''
-    h c h c b a r b
-    a b a b as g r f
-    es r h r c as' g fis \noBreak
-    g4 g, c r8 h'-\rip c es, f g c,4 r\fermata \bar "||"
     \time 3/2 \newSpacingSection \tempoReddeMihi
       \override Staff.TimeSignature.style = #'single-digit
       r4 \mvTr es\fE-\tutti es g g b \noBreak
@@ -132,12 +92,6 @@ MiserereOrgano = {
 }
 
 
-
-
-A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
-et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
-Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
-Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
 Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
 et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
 Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.

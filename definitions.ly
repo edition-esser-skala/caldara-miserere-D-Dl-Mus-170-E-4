@@ -7,6 +7,8 @@
 
 rip = \markup \remark "Rip."
 senzaRip = \markup \remark "senza Rip."
+adlibitum = \markup \remark "ad libitum"
+adlibitumE = \markup \remarkE "ad libitum"
 
 
 tempoMiserere = \tempoMarkup "Adagio"
@@ -18,7 +20,7 @@ tempoEcceEnim = \tempoMarkup "Andante"
   tempoEcceEnimB = \tempoMarkup "Adagio"
 tempoAuditui = \tempoMarkup "Allegro"
   tempoAudituiB = \tempoMarkup "Adagio"
-% tempoAverteFaciem = \tempoMarkup "Andante"
+tempoAverte = \tempoMarkup "Andante"
 % tempoReddeMihi = \tempoMarkup "Allegro"
 % tempoDoceboIniquos = \tempoMarkup "Allegro"
 % tempoLiberaMe = \tempoMarkup "Andante"
