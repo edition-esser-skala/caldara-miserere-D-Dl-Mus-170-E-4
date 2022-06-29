@@ -5,8 +5,27 @@
 #(define option-print-all-bar-numbers #t)
 \include "ees.ly"
 
+rip = \markup \remark "Rip."
+senzaRip = \markup \remark "senza Rip."
+
 
 tempoMiserere = \tempoMarkup "Adagio"
+% tempoEtSecundum = \tempoMarkup "Andante"
+% tempoTibiSoli = \tempoMarkup "A capella"
+% tempoEcceEnimIn = \tempoMarkup "Vivace"
+% tempoEtInPeccatis = \tempoMarkup "Adagio"
+% tempoEcceEnimVeritatem = \tempoMarkup "Andante"
+%   tempoEcceEnimVeritatemB = \tempoMarkup "Adagio"
+% tempoAudituiMeo = \tempoMarkup "Allegro"
+%   tempoAudituiMeoB = \tempoMarkup "Adagio"
+% tempoAverteFaciem = \tempoMarkup "Andante"
+% tempoReddeMihi = \tempoMarkup "Allegro"
+% tempoDoceboIniquos = \tempoMarkup "Allegro"
+% tempoLiberaMe = \tempoMarkup "Andante"
+%   tempoLiberaMeB = \tempoMarkup "Adagio"
+%   tempoLiberaMeC = \tempoMarkup "Andante"
+% tempoSacrificium = \tempoMarkup "Grave"
+% tempoBenigne = \tempoMarkup "Andante"
 
 
 \include "notes/ob1.ly"
