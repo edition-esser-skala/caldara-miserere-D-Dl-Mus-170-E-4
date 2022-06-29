@@ -101,3 +101,32 @@ TibiSoliViolinoII = {
     f1\fermata \bar "||" %79 finis
   }
 }
+
+EcceEnimViolinoII = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \tempoEcceEnim
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Score.currentBarNumber = #80
+    r2 r4 r b\fE a
+    b r r b'\p a8 g f4
+    g g g f f\f e
+    f r r r2 r4
+    R1.
+    r2 r4 g\pE a b %85
+    \appoggiatura b c2 r4 r2 r4
+    r2 r4 g\fE a b
+    c8[ b a g fis? e?] d4 d'8 c b4
+    a a2\trill g4 r r
+    r2 r4 f\p f es %90
+    d r r r2 r4
+    g es c f r r
+    r2 r4 a b g
+    f r r g8.( f16) es4 d
+    \appoggiatura d8 es4 r r r2 r4 %95
+    R1.*4
+    c'4 b! as g2 as8.(\trill g32 as) %100
+    b4 as g f r f
+    \tempoEcceEnimB g2. c,\fermata \bar "||" %102 finis
+  }
+}

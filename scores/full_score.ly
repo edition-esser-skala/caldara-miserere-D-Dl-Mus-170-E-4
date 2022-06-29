@@ -152,84 +152,150 @@
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Tibi soli peccavi"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TibiSoliOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TibiSoliOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TibiSoliViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TibiSoliViolinoII
+  %           }
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vla"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TibiSoliViolaI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TibiSoliViolaII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \TibiSoliOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \TibiSoliBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Tibi soli peccavi"
+    \subsection "Ecce enim veritatem"
     \addTocEntry
+    \paper {
+      top-system-spacing.basic-distance = #10
+      top-system-spacing.minimum-distance = #10
+      top-markup-spacing.basic-distance = #0
+      top-markup-spacing.minimum-distance = #0
+      markup-system-spacing.basic-distance = #10
+      markup-system-spacing.minimum-distance = #10
+      system-system-spacing.basic-distance = #19.5
+      system-system-spacing.minimum-distance = #19.5
+      systems-per-page = #2
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "ob"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \TibiSoliOboeI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \TibiSoliOboeII
-            }
-          >>
-        >>
         \new StaffGroup <<
           \new GrandStaff \with { \smallGroupDistance } <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \TibiSoliViolinoI
+              \EcceEnimViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \TibiSoliViolinoII
+              \EcceEnimViolinoII
             }
           >>
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vla"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \TibiSoliViolaI
+              \EcceEnimViolaI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \TibiSoliViolaII
+              \EcceEnimViolaII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
+            \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
           }
-          \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
-          }
-          \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
-          }
-          \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
+          \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+            \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
           }
-          \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+          \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \TibiSoliOrgano
+            \EcceEnimOrgano
           }
         >>
-        \new FiguredBass { \TibiSoliBassFigures }
+        \new FiguredBass { \EcceEnimBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 2. = 45 }
     }
   }
 }

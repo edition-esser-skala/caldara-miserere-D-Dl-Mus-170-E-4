@@ -147,3 +147,33 @@ TibiSoliSopranoLyrics = \lyricmode {
   me --
   a. %79 finis
 }
+
+EcceEnimSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \autoBeamOff \tempoEcceEnim
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Score.currentBarNumber = #80
+    r4 \mvTr b'\pE^\solo a b8.([ a16)] b4 r
+    r f' c d( es) f
+    es d2 d4 c r
+    r r f f b, es8 es
+    es4 a, d8 d g,4 c a
+    fis8([ e)] d4 r b' c d %85
+    es8[ d c b a g] fis'[ e] d4 g
+    b,( a2) g r4
+    R1.*14 %101
+    \tempoEcceEnimB R1.\fermata \bar "||"
+  }
+}
+
+EcceEnimSopranoLyrics = \lyricmode {
+  Ec -- ce e -- nim %80
+  ve -- ri -- ta -- tem
+  di -- le -- xi -- sti,
+  in -- cer -- ta et oc --
+  cul -- ta sa -- pi -- en -- ti -- ae
+  tu -- ae ma -- ni -- fe -- %85
+  sta -- _ _ sti
+  mi -- hi. %87 finis
+}

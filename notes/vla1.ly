@@ -52,3 +52,35 @@ TibiSoliViolaI = {
     c1\fermata \bar "||" %79 finis
   }
 }
+
+EcceEnimViolaI = {
+  \relative c' {
+    \clef alto
+    \key b \major \time 3/2 \tempoEcceEnim
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Score.currentBarNumber = #80
+    r2 r4 r f,\fE f
+    f r r b\pE c d
+    es e e f c\fE c
+    c r r r2 r4
+    R1.
+    r8 d4\pE c8[ b a] g g'4 f8[ es d] %85
+    c2 r4 r2 r4
+    r2 r4 r8 g4\fE f8 es d
+    c4 c' c a b b
+    es d d d r r
+    \mvTr f\f-\solo es d c2 r4 %90
+    d es f g r r
+    R1.
+    f4 g e f r r
+    f es d es r r
+    c' b! as g2 as4 %95
+    b as g f2 g4
+    as g f es2 f4
+    g f es d4. es8 f4
+    es d2\trill c r4
+    r2 r4 g' f es %100
+    d2 es4 f es d
+    \tempoEcceEnimB c h2 c2.\fermata \bar "||" %102 finis
+  }
+}

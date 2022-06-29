@@ -142,3 +142,44 @@ TibiSoliBassoLyrics = \lyricmode {
   me ma -- ter me --
   a. %79 finis
 }
+
+EcceEnimBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \autoBeamOff \tempoEcceEnim
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Score.currentBarNumber = #80
+    R1.*9 %88
+    r2 r4 \mvTr g'\pE^\solo f! es
+    d2 r4 f g a %90
+    b2 b4 g( b) d,
+    es( c') es, d4.( c8) b4
+    r2 r4 f' g e
+    f r r c' f, g
+    c, r r c' b! as %95
+    g2 as4 b( as) g
+    f2 g4 as( g) f
+    es2 f4 g8.[ as16 g8 f es d]
+    c4 g2 c r4
+    c b! as g2 as4 %100
+    b( as) g f2.(
+    \tempoEcceEnimB g) c\fermata \bar "|." %102 finis
+  }
+}
+
+EcceEnimBassoLyrics = \lyricmode {
+  A -- sper -- ges %89
+  me, A -- sper -- ges %90
+  me hys -- so -- po,
+  et __ mun -- da -- bor;
+  la -- va -- bis
+  me, la -- va -- bis
+  me, la -- va -- bis %95
+  me, et su -- per
+  ni -- vem de -- al --
+  ba -- _ _
+  _ _ bor,
+  et su -- per ni -- vem %100
+  de -- al -- ba --
+  bor. %102 finis
+}

@@ -1,30 +1,5 @@
 MiserereOrgano = {
   \relative c {
-    \key b \major \time 3/2 \newSpacingSection \tempoEcceEnimVeritatem
-      \override Staff.TimeSignature.style = #'single-digit
-      \mvTr b4\pE-\solo-\orgE d f b,-\rip d f \noBreak
-    b, d-\org f b, c d
-    es e e f a c
-    f, a f g g, c
-    f f, b es a, c
-    d4. c8 b a g'4. f8 es d
-    c2. d2 b4
-    c d d, g'4.-\rip f8 es d
-    c4 c' c, d8 c b a g4
-    c d d, g f'-\orgE es
-    d2 es4 f g a
-    b2 b4 es,2 d4
-    c2. b4 d-\rip e
-    f b,-\org c f b, c
-    f g g, c f g
-    c,2 r4 c' b as
-    g2 as4 b as g
-    f2 g4 as g f
-    es2 f4 g4. f8 es d
-    c4 g' g, c2 r4
-    c b as g2 as4
-    b as g f2 f4 \noBreak
-    \tempoEcceEnimVeritatemB g2. c\fermata \bar "||"
     \clef treble \key g \dorian \time 4/4 \newSpacingSection \tempoAudituiMeo
       \revert Staff.TimeSignature.style
     << {
@@ -177,10 +152,6 @@ MiserereOrgano = {
 
 
 
-Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
 Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
 et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
 A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,

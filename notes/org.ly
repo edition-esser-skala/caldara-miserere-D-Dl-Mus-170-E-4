@@ -195,3 +195,61 @@ TibiSoliBassFigures = \figuremode {
   <_!>4 <6> <4> <_!>
   q1 %79 finis
 }
+
+EcceEnimOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \tempoEcceEnim
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Score.currentBarNumber = #80
+    \mvTr b4\pE-\solo-\orgE d f b,-\rip d f
+    b, d-\org f b, c d
+    es e e f a c
+    f, a f g g, c
+    f f, b es a, c
+    d4. c8[ b a] g'4. f8 es d %85
+    c2. d2 b4
+    c d d, g'4.-\rip f!8 es d
+    c4 c' c, d8[ c b a] g4
+    c d d, g f'!-\orgE es
+    d2 es4 f g a %90
+    b2 b4 es,2 d4
+    c2. b4 d-\rip e
+    f b,-\org c f b, c
+    f g g, c f g
+    c,2 r4 c' b! as %95
+    g2 as4 b as g
+    f2 g4 as g f
+    es2 f4 g4. f8 es d
+    c4 g' g, c2 r4
+    c b! as g2 as4 %100
+    b as g f2 f4
+    \tempoEcceEnimB g2. c\fermata \bar "||" %102 finis
+  }
+}
+
+EcceEnimBassFigures = \figuremode {
+  r1. %80
+  r1 \bo <[6]>4 <6>
+  r <7>2 <4>4 <6> \bc <[_!]>
+  r2. <7>2 q4
+  q2 q4 q <5> <6>
+  <5 _+>2 \bassFigureExtendersOn q8 q <5\! 3>2 <5 3>8 q \bassFigureExtendersOff %85
+  r2. <_+>2 <6>4
+  <7> <4> <_+> <5 3>2 \bassFigureExtendersOn q8 q
+  r2. <5 _+>4. q8 \bassFigureExtendersOff <8>4
+  <6 5> <4> <_+>2 <6 4>4 <6 3>
+  <6>2 <[7]>4 <5>2. %90
+  r <5>
+  \bo <[5]>2 \bc <[6]>4 r2 <5>4
+  r4 <[6]> <_!> r2 q4
+  r <6- 4> <5 _!> r <_-> <7 [_!]>
+  r2. <5>4 <6 4> <6> %95
+  q2 <[7]>4 <5 3> <6 4> <6>
+  <5 _->2 <7>4 <5 3> <6 4> <6 [_-]>
+  <5>2 <7 [_-]>4 <5 _!>2 \bassFigureExtendersOn q8 q \bassFigureExtendersOff
+  r4 <5 4> <\t _!> r2.
+  <5 3>4 <6 4> <6> r2 <7>4 %100
+  <5 3> <6 4> <6> <5 _->2 <6 \t>4
+  <6 4> <5 _!>2 r2. %102 finis
+}
