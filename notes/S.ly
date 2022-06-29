@@ -212,3 +212,51 @@ AudituiSopranoLyrics = \lyricmode {
   hu -- mi -- li -- a --
   ta. %114 finis
 }
+
+ReddeSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 3/2 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \mvTr b'\fE^\tuttiE b b b b
+    b4. b8 b4 r2 r4 %155
+    r2 r4 r b b
+    b b a b4. b8 b4
+    r b b c b2
+    a4 a c f f8 es d c
+    b4 b b es2.~ %160
+    es4 d c d c2 \noBreak
+    b r4 r2 r4
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      r4 b b2 \noBreak
+    b4 b h2
+    h b4. b8 %165
+    as2 as
+    r4 as a8. a16 a4
+    r a b8. b16 b8 b
+    b4 as8 as g2
+    a1\fermata \bar "||" %170 finis
+  }
+}
+
+ReddeSopranoLyrics = \lyricmode {
+  Red -- de mi -- hi lae -- %154
+  ti -- ti -- am, %155
+  red -- de
+  mi -- hi lae -- ti -- ti -- am
+  sa -- lu -- ta -- ris
+  tu -- i, et spi -- ri -- tu prin -- ci --
+  pa -- li con -- fir -- %160
+  ma, con -- fir -- ma
+  me.
+  Do -- ce --
+  bo in -- i --
+  quos vi -- as %165
+  tu -- as,
+  et im -- pi -- i,
+  et im -- pi -- i ad
+  te con -- ver -- ten --
+  tur. %170 finis
+}

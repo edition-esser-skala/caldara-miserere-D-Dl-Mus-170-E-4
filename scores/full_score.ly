@@ -378,55 +378,135 @@
   %     \midi { \tempo 4 = 105 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Averte faciem tuam"
+  %   \addTocEntry
+  %   \paper { systems-per-page = #2 }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AverteViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AverteViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AverteAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AverteAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AverteTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AverteBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AverteBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AverteOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AverteBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Averte faciem tuam"
+    \subsection "Redde mihi lætitiam"
     \addTocEntry
-    \paper { systems-per-page = #2 }
     \score {
       <<
         \new StaffGroup <<
           \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
+            \set GrandStaff.instrumentName = "ob"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \AverteViolinoI
+              \ReddeOboeI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \AverteViolinoII
+              \ReddeOboeII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ReddeViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ReddeViolinoII
+            }
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vla"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ReddeViolaI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ReddeViolaII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AverteAlto }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \ReddeSoprano }
           }
-          \new Lyrics \lyricsto Alto \AverteAltoLyrics
+          \new Lyrics \lyricsto Soprano \ReddeSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \ReddeAlto }
+          }
+          \new Lyrics \lyricsto Alto \ReddeAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AverteTenore }
+            \new Voice = "Tenore" { \dynamicUp \ReddeTenore }
           }
-          \new Lyrics \lyricsto Tenore \AverteTenoreLyrics
+          \new Lyrics \lyricsto Tenore \ReddeTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AverteBasso }
+            \new Voice = "Basso" { \dynamicUp \ReddeBasso }
           }
-          \new Lyrics \lyricsto Basso \AverteBassoLyrics
+          \new Lyrics \lyricsto Basso \ReddeBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AverteOrgano
+            \ReddeOrgano
           }
         >>
-        \new FiguredBass { \AverteBassFigures }
+        \new FiguredBass { \ReddeBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 80 }
+      \midi { \tempo 2. = 50 }
     }
   }
 }

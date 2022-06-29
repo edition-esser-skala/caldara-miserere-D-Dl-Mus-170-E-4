@@ -248,3 +248,51 @@ AverteBassoLyrics = \lyricmode {
   au -- _ _ fe --
   ras a me. %152 finis
 }
+
+ReddeBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 3/2 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \mvTr es\fE^\tuttiE es g g b
+    es,4. es8 es4 r2 r4 %155
+    r2 r4 r b b
+    d d f b4. b,8 b4
+    r b' b a g2
+    f4 f r r r f
+    g g8 f es d c4 c c %160
+    f g a b f2 \noBreak
+    b, r4 r2 r4
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      r4 b' b2 \noBreak
+    b4 b as2
+    as e4. e8 %165
+    f2 f
+    r4 f es!8. es16 es4
+    r es des8. des16 des8 des
+    c4 c8 c c2
+    f,1\fermata \bar "||" %170 finis
+  }
+}
+
+ReddeBassoLyrics = \lyricmode {
+  Red -- de mi -- hi lae -- %154
+  ti -- ti -- am, %155
+  red -- de
+  mi -- hi lae -- ti -- ti -- am
+  sa -- lu -- ta -- ris
+  tu -- i, et
+  spi -- ri -- tu prin -- ci -- pa -- li con -- %160
+  fir -- ma, con -- fir -- ma
+  me.
+  Do -- ce --
+  bo in -- i --
+  quos vi -- as %165
+  tu -- as,
+  et im -- pi -- i,
+  et im -- pi -- i ad
+  te con -- ver -- ten --
+  tur. %170 finis
+}

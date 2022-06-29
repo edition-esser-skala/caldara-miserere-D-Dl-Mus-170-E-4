@@ -1,26 +1,7 @@
 MiserereOrgano = {
   \relative c {
     \time 3/2 \newSpacingSection \tempoReddeMihi
-      \override Staff.TimeSignature.style = #'single-digit
-      r4 \mvTr es\fE-\tutti es g g b \noBreak
-    es,2 es,4 r2 r4
-    r2 r4 r b' b
-    d d f b2 b,4
-    r b' b a g2
-    f4 f, r r r f'
-    g g8 f es d c2.
-    f b,4 f' f, \noBreak
-    b2 r4 r b f \bar "||"
-    \time 4/4 \newSpacingSection \tempoDoceboIniquos
-      \revert Staff.TimeSignature.style
-      b b' b2 \noBreak
-    b as~
-    as e
-    f1
-    r4 f es2
-    r4 es des2
-    c1 \noBreak
-    f,\fermata \bar "||"
+
     \time 3/2 \newSpacingSection \tempoLiberaMe
       \override Staff.TimeSignature.style = #'single-digit
       \mvTr b2.\fE-\solo-\rip g'4 es f \noBreak
@@ -92,9 +73,7 @@ MiserereOrgano = {
 }
 
 
-Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
+
 Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
 et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
 Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,

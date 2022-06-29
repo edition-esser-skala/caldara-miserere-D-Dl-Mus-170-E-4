@@ -197,3 +197,31 @@ AverteViolinoI = {
     c es, f g c,4 r\fermata \bar "||" %153 finis
   }
 }
+
+ReddeViolinoI = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 3/2 \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \parOn g''\fE-\parenthesize-! g-! g-! g-! \parOff f-\parenthesize-!
+    g8([ b) b( as) as( g)] g[ g g( f) f( es)] %155
+    es[ b b( as) as( g)] g4 d' d
+    d d c d8[ f f( es) es( d)]
+    d4 f f f2 e4
+    f8[ c c( b) b( a)] a4 r r
+    r r b es2.~ %160
+    es4 d c d c2 \noBreak
+    b8[ f' f( es) es( d)] d4 b-! a-!
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      b d d2 \noBreak
+    d4 d d2~
+    d c %165
+    c c
+    r4 c c2
+    r4 c des des
+    e, f2 e4
+    f1\fermata \bar "||" %170 finis
+  }
+}

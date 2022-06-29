@@ -216,3 +216,51 @@ AverteTenoreLyrics = \lyricmode {
   _ _ _ _
   is. %42 finis
 }
+
+ReddeTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 3/2 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \mvTr es\fE^\tuttiE es es es d
+    es4. es8 es4 r2 r4 %155
+    r2 r4 r d d
+    d d c d4. d8 d4
+    r d d c( d) b
+    c c r r r f
+    d d8 d d d es4 c c %160
+    a b c b2 a4 \noBreak
+    b2 r4 r2 r4
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      r4 d d2 \noBreak
+    d4 d d2
+    d c4. c8 %165
+    c2 c
+    r4 c c8. c16 c4
+    r c des8. des16 des8 des
+    g,!4 c8 c c2
+    c1\fermata \bar "||" %170 finis
+  }
+}
+
+ReddeTenoreLyrics = \lyricmode {
+  Red -- de mi -- hi lae -- %154
+  ti -- ti -- am, %155
+  red -- de
+  mi -- hi lae -- ti -- ti -- am
+  sa -- lu -- ta -- ris
+  tu -- i, et
+  spi -- ri -- tu prin -- ci -- pa -- li con -- %160
+  fir -- ma, con -- fir -- ma
+  me.
+  Do -- ce --
+  bo in -- i --
+  quos vi -- as %165
+  tu -- as,
+  et im -- pi -- i,
+  et im -- pi -- i ad
+  te con -- ver -- ten --
+  tur. %170 finis
+}

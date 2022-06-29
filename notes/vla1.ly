@@ -104,3 +104,31 @@ AudituiViolaI = {
     h1\fermata \bar "||" %114 finis
   }
 }
+
+ReddeViolaI = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 3/2 \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 b'\fE b b b b
+    b r r r2 r4 %155
+    r2 r4 r f f
+    f f f f r r
+    r f f f g g
+    c, r r r2 r4
+    r2 r4 r r es %160
+    f f f f f2 \noBreak
+    f4 r r r r f
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      f f f2 \noBreak
+    f4 f \once \slurDashed f2~
+    f g %165
+    f f
+    r4 f ges2
+    r4 ges f4. b8
+    g4 f g2
+    f1\fermata \bar "||" %170 finis
+  }
+}

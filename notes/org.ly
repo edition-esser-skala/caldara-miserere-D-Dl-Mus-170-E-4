@@ -383,3 +383,51 @@ AverteBassFigures = \figuremode {
   <4>4 <_!>2 r8 \bo <[6]>
   r <6> \bc <[_-]> <_!> r2 %153 finis
 }
+
+ReddeOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 3/2 \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \mvTr es\fE-\tutti es g g b
+    es,2 es,4 r2 r4 %155
+    r2 r4 r b' b
+    d d f b2 b,4
+    r b' b a g2
+    f4 f, r r r f'
+    g g8[ f es d] c2. %160
+    f b,4 f' f, \noBreak
+    b2 r4 r b f
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      b b' b2 \noBreak
+    b as~
+    as e %165
+    f1
+    r4 f es!2
+    r4 es des2
+    c1
+    f,\fermata \bar "||" %170 finis
+  }
+}
+
+ReddeBassFigures = \figuremode {
+  r2. <[6]> %154
+  r1. %155
+  r
+  <[6]>
+  r2. <6>4 <7> <6!>
+  r1.
+  <5> %160
+  <7 3>4 <6 4> <5 [3]>2 <4>4 <3>
+  r1.
+  r1
+  r2 <6 4 2!>
+  <\t \t \t> <6 5-> %165
+  <_->1
+  r4 <_-> <6 4! [_-]>2
+  r4 <\t \t \t> <6>2
+  <7 _!>4 <6- 4> <5 \t> <\t _!>
+  <_!>1 %170 finis
+}

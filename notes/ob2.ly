@@ -76,3 +76,31 @@ AudituiOboeII = {
     g1\fermata \bar "||" %114 finis
   }
 }
+
+ReddeOboeII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 3/2 \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 es'-!\fE es-! es-! es-! d-!
+    es8([ g) g( f) f( es)] es[ b b( as) as( g)] %155
+    g[ g g( f) f( es)] es4 b' b
+    b b a b8[ d d( c) c( b)]
+    b4 b b c b2
+    a8[ a a( g) g( f)] f4 r r
+    r2 r4 r r g %160
+    a b c b b a \noBreak
+    b8[ d d( c) c( b)] b4 \parOn d,-\parenthesize-! \parOff c-\parenthesize-!
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      d b' b2 \noBreak
+    b4 b h2~
+    h b %165
+    as as
+    r4 as a2
+    r4 a b b~
+    b as g2
+    a1\fermata \bar "||" %170 finis
+  }
+}

@@ -212,3 +212,51 @@ AverteAltoLyrics = \lyricmode {
   _ _ _
   _ _ le. %127 finis
 }
+
+ReddeAlto = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 3/2 \autoBeamOff \tempoRedde
+      \set Score.currentBarNumber = #154
+      \override Staff.TimeSignature.style = #'single-digit
+    r4 \mvTr g'\fE^\tuttiE g g g f
+    g4. g8 g4 r2 r4 %155
+    r2 r4 r f f
+    f f f f4. f8 f4
+    r f f f2 e4
+    f f r r r a
+    b b8 a g f g4 g g %160
+    f2.~ f2 f4 \noBreak
+    f2 r4 r2 r4
+    \time 4/4 \tempoDocebo
+      \revert Staff.TimeSignature.style
+      r4 f f2 \noBreak
+    f4 f f2
+    f g4. g8 %165
+    f2 f
+    r4 f ges8. ges16 ges4
+    r ges f8. f16 f8 f
+    e4 f4. f8 e4
+    f1\fermata \bar "||" %170 finis
+  }
+}
+
+ReddeAltoLyrics = \lyricmode {
+  Red -- de mi -- hi lae -- %154
+  ti -- ti -- am, %155
+  red -- de
+  mi -- hi lae -- ti -- ti -- am
+  sa -- lu -- ta -- ris
+  tu -- i, et
+  spi -- ri -- tu prin -- ci -- pa -- li con -- %160
+  fir -- ma
+  me.
+  Do -- ce --
+  bo in -- i --
+  quos vi -- as %165
+  tu -- as,
+  et im -- pi -- i,
+  et im -- pi -- i ad
+  te con -- ver -- ten --
+  tur. %170 finis
+}
