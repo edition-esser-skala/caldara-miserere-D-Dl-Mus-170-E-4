@@ -68,3 +68,36 @@ EtSecundumViolinoI = {
     f d g g, c2\fermata \bar "||" %53 finis
   }
 }
+
+TibiSoliViolinoI = {
+  \relative c' {
+    \clef treble
+    \key f \dorian \time 4/4 \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    c'2\fE^\tenuto des
+    a b4 as %55
+    g2 f4 des'
+    h2 b
+    as8 f c'4 c h
+    c c b8 as g4
+    f f f8 g as! f %60
+    b2 as
+    R1*2
+    c2 des
+    a b4 as %65
+    g2 f
+    r4 b4. b8 es d
+    c c b b b4 b8 b
+    b4 f r2
+    r r4 c' %70
+    b es8 es as, b c d
+    es b es2 d4
+    es \tempoTibiSoliB es8 es d4 d
+    d8 d d d c8. c16 c8 c
+    des4 des c \tempoTibiSoliC f %75
+    des des b2
+    b8 b as g as4 as8 b
+    g4 as g2
+    a1\fermata \bar "||" %79 finis
+  }
+}

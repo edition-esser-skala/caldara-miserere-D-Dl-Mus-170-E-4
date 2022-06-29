@@ -92,3 +92,53 @@ EtSecundumBassoLyrics = \lyricmode {
   me est sem --
   per. %52 finis
 }
+
+TibiSoliBasso = {
+  \relative c {
+    \clef bass
+    \key f \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    R1*7 %60
+    r2 \mvTr f\fE^\tuttiE
+    as e
+    f4 es d2
+    c4 as' e2
+    es des8 b f'4 %65
+    f( e) f r
+    b,4. b8 es d c4
+    c d8 d es4 es8 es
+    b4 b r2
+    R1 %70
+    r4 g' f b8 b
+    es,([ f)] g([ as)] b2
+    es,4 \tempoTibiSoliB es8 es b4 b
+    h8. h16 h8 h c8. c16 c8 c
+    b4 b as \tempoTibiSoliC r %75
+    r b' ges ges
+    e2 f8 des c b
+    c4 as8 f c'2
+    f,1\fermata \bar "||" %79 finis
+  }
+}
+
+TibiSoliBassoLyrics = \lyricmode {
+  Ti -- %61
+  bi so --
+  li pec -- ca --
+  vi, et ma --
+  lum co -- ram te %65
+  fe -- ci
+  ut iu -- sti -- fi -- ce --
+  ris in ser -- mo -- ni -- bus
+  tu -- is,
+  %70
+  et vin -- cas cum
+  iu -- di -- ca --
+  ris. Ec -- ce e -- nim
+  in in -- i -- qui -- ta -- ti -- bus con --
+  cep -- tus sum, %75
+  et in pec --
+  ca -- tis con -- ce -- pit
+  me ma -- ter me --
+  a. %79 finis
+}

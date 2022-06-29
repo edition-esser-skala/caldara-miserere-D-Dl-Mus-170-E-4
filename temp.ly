@@ -1,38 +1,5 @@
 MiserereOrgano = {
   \relative c {
-    \clef treble \key f \dorian \time 2/2 \newSpacingSection \tempoTibiSoli
-      \mvTr c''2\fE-\tutti des \noBreak
-    a b4 as
-    << {
-      g2 f4^\critnote des'
-      h2 b
-      as4 c2 h4
-    } \\ {
-      r2 f
-      as e
-      f4 es d2
-    } >>
-    \clef "treble_8" c2 des
-    a b4 as
-    g2 \clef bass g
-    as e
-    f4 es d2
-    c4 as' e2
-    es des8 b f'4~
-    f e f2
-    b, es8 d c2~
-    c4 d es2
-    b r4^\critnote \clef "treble_8" c'
-    b es as,8 b c d
-    es4 \clef bass g, f b8 b
-    es, f g as b4 b,
-    es, \tempoEcceEnimIn es'8 es b2
-    h c
-    b as4 \tempoEtInPeccatis r
-    r b' ges2
-    e f8 des c b
-    c4 as8 f c'2 \noBreak
-    f,1\fermata \bar "||"
     \key b \major \time 3/2 \newSpacingSection \tempoEcceEnimVeritatem
       \override Staff.TimeSignature.style = #'single-digit
       \mvTr b4\pE-\solo-\orgE d f b,-\rip d f \noBreak
@@ -210,10 +177,6 @@ MiserereOrgano = {
 
 
 
-Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
-Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
 Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
 in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
 A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;

@@ -126,3 +126,72 @@ EtSecundumBassFigures = \figuremode {
   r <6>8 <6!> <6> <\t> <6 4! 2> <6>
   <_->4 <4>8 <_!> r2 %53 finis
 }
+
+TibiSoliOrgano = {
+  \relative c {
+    \clef treble
+    \key f \dorian \time 4/4 \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    \mvTr c''2\fE-\tutti des
+    a b4 as %55
+    << {
+      g2 f4^\critnote des'
+      h2 b
+      as4 c2 h4
+    } \\ {
+      r2 f
+      as e
+      f4 es d2
+    } >>
+    \clef "treble_8" c2 des
+    a b4 as %60
+    g2 \clef bass f
+    as e
+    f4 es d2
+    c4 as' e2
+    es des8 b f'4~ %65
+    f e f2
+    b, es8 d c4~
+    c4 d es2
+    b r4^\critnote \clef "treble_8" c'
+    b es as,8 b c d %70
+    es4 \clef bass g, f b8 b
+    es, f g as b4 b,
+    es, \tempoTibiSoliB es'8 es b2
+    h c
+    b as4 \tempoTibiSoliC \clef treble f'''^\critnote %75
+    des \clef bass b, ges2
+    e f8 des c b
+    c4 as8 f c'2
+    f,1\fermata \bar "||" %79 finis
+  }
+}
+
+TibiSoliBassFigures = \figuremode {
+  r1 %54
+  r %55
+  r
+  r
+  r
+  \bo <[5]>4 \bc <[6]> <6 4 2!>2
+  <6 5-> <5 _->4 <6> %60
+  <7> <6!> <5> <6->
+  <6 4 2!>2 <6 5->
+  r4 <6> <7> <6!>
+  <_!> <[6]> <7- 5 3>2
+  <6 4! 2> <6>8 <[\t]> <5 _->4 %65
+  <[6-] 4 2> <6>2.
+  <5 _!>2 <5>
+  <6>8 <5> <6>4 <9 3> <[8 \t]>
+  <5 4> <\t 3>2 <5>8 <6>
+  r4 \bo <[4]>8 \bc <[3]>4. <6>4 %70
+  <5 4> <6> <5>2
+  r4 <6> <5 4> <\t 3>
+  r1
+  <7 5 3>
+  <6 4! _->2 <6> %75
+  r4 <_-> <5- 3>2
+  <6 5 _!> r8 <5> <6 [4]> <5 _->
+  <_!>4 <6> <4> <_!>
+  q1 %79 finis
+}

@@ -94,3 +94,57 @@ EtSecundumTenoreLyrics = \lyricmode {
   me est sem --
   per. %52 finis
 }
+
+TibiSoliTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    R1*5 %58
+    \mvTr c2\fE^\tuttiE des
+    a b4 as %60
+    g2 f4 des'
+    h2 b
+    as8 f c'4 c( h)
+    c c b8([ a)] g4
+    f f f8([ g)] as f %65
+    b4( as8[ g)] as4 f~
+    f8 f b as g4 g
+    as8 g f4. f8 es4
+    es d r c'
+    b es8 es as,([ b)] c([ d)] %70
+    es2 f
+    es4 b4. c8 b4
+    b \tempoTibiSoliB b8 b b4 f'
+    f8 f f f es8. es16 es8 es
+    e4 e f \tempoTibiSoliC r %75
+    r des des des
+    c2 c8 f, c' des
+    c4 c8 c c2
+    c1\fermata \bar "||" %79 finis
+  }
+}
+
+TibiSoliTenoreLyrics = \lyricmode {
+  Ti -- bi %59
+  so -- li pec -- %60
+  ca -- vi, et
+  ma -- lum
+  co -- ram te fe --
+  ci, et ma -- lum,
+  ma -- lum co -- ram te %65
+  fe -- ci ut __
+  iu -- sti -- fi -- ce -- ris
+  in ser -- mo -- ni -- bus
+  tu -- is, et
+  vin -- cas cum iu -- di -- %70
+  ca -- _
+  _ _ _ _
+  ris. Ec -- ce e -- nim
+  in in -- i -- qui -- ta -- ti -- bus con --
+  cep -- tus sum, %75
+  et in pec --
+  ca -- tis con -- ce -- pit
+  me ma -- ter me --
+  a. %79 finis
+}

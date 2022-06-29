@@ -83,3 +83,63 @@ EtSecundumAltoLyrics = \lyricmode {
   ta -- tem __
   me -- am.
 }
+
+TibiSoliAlto = {
+  \relative c' {
+    \clef treble
+    \key f \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    R1*2 %55
+    r2 \mvTr f\fE^\tuttiE
+    as e
+    f4 es d2
+    c4 as' e2
+    es des8 b f'4~ %60
+    f e f f
+    f8([ es)] d4 c c
+    c8([ d)] es! c f2
+    e4 f g8 fis e g
+    c,2 des4 c %65
+    r c4. c8 f es!
+    d!4 d g4. f8
+    es4 f8 f g g g4
+    f b8 b es,([ f)] g([ as)]
+    b4 as8[ g] as[ es] as4~ %70
+    as g c,8[ d es f]
+    g2 f
+    g4 \tempoTibiSoliB g8 g f4 b
+    as8 as as as g8. g16 g8 g
+    g4 g as \tempoTibiSoliC r %75
+    r f ges ges
+    g2 f8 f f f
+    e4 f4. f8 e4
+    f1\fermata \bar "||" %79 finis
+  }
+}
+
+TibiSoliAltoLyrics = \lyricmode {
+  Ti -- %56
+  bi so --
+  li pec -- ca --
+  vi, et ma --
+  lum co -- ram te __ %60
+  fe -- ci, et
+  ma -- lum, ma -- lum
+  co -- ram te fe --
+  ci, et ma -- lum co -- ram
+  te fe -- ci %65
+  ut iu -- sti -- fi --
+  ce -- ris in ser --
+  mo -- ni -- bus tu -- is, et
+  vin -- cas cum iu -- di --
+  ca -- _ _ _ %70
+  _ _
+  _ _
+  ris. Ec -- ce e -- nim
+  in in -- i -- qui -- ta -- ti -- bus con --
+  cep -- tus sum, %75
+  et in pec --
+  ca -- tis con -- ce -- pit
+  me ma -- ter me --
+  a. %79 finis
+}

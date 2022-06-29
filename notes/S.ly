@@ -86,3 +86,64 @@ EtSecundumSopranoLyrics = \lyricmode {
   in -- i -- qui -- ta -- tem
   me -- am. %32 finis
 }
+
+TibiSoliSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \dorian \time 4/4 \autoBeamOff \tempoTibiSoli
+      \set Score.currentBarNumber = #54
+    \mvTr c'2\fE^\tuttiE des
+    a b4 as %55
+    g2 f4 des'
+    h2 b
+    as8 f c'4 c( h)
+    c c b8([ as)] g4
+    f f f8([ g)] as! f %60
+    b2 as
+    R1*2
+    c2 des
+    a b4 as %65
+    g2 f
+    r4 b4. b8 es d
+    c c b b b4 b8 b
+    b4 f r2
+    r r4 c' %70
+    b es8 es as,([ b)] c([ d)]
+    es([ b] es2 d4)
+    es \tempoTibiSoliB es8 es d4 d
+    d8 d d d c8. c16 c8 c
+    des4 des c \tempoTibiSoliC f %75
+    des des b2
+    b8 b as g as4 as8 b
+    g4( as g2)
+    a1\fermata \bar "||" %79 finis
+  }
+}
+
+TibiSoliSopranoLyrics = \lyricmode {
+  Ti -- bi %54
+  so -- li pec -- %55
+  ca -- vi, et
+  ma -- lum
+  co -- ram te fe --
+  ci, et ma -- lum,
+  ma -- lum co -- ram te %60
+  fe -- ci,
+
+  ti -- bi %64
+  so -- li pec -- %65
+  ca -- vi,
+  ut iu -- sti -- fi --
+  ce -- ris in ser -- mo -- ni -- bus
+  tu -- is,
+  et %70
+  vin -- cas cum iu -- di --
+  ca --
+  ris. Ec -- ce e -- nim
+  in in -- i -- qui -- ta -- ti -- bus con --
+  cep -- tus sum, et %75
+  in pec -- ca --
+  tis con -- ce -- pit me ma -- ter
+  me --
+  a. %79 finis
+}
