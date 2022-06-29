@@ -177,3 +177,38 @@ EcceEnimSopranoLyrics = \lyricmode {
   sta -- _ _ sti
   mi -- hi. %87 finis
 }
+
+AudituiSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAuditui
+      \set Score.currentBarNumber = #103
+    r2 \mvTr g'\fE^\tuttiE
+    b4 b8 b a d, d' d
+    c16[ d c d] c[ d c d] b[ c b c] b[ c b c] %105
+    a8 a16 a d4. d8 c8. c16
+    d4 r r2
+    r4 c8 c d16([ es d es] d[ es d es]
+    c8) c16 c d8 d c4. c8
+    b4 b f'2 %110
+    b, d
+    es \tempoAudituiB fis,4 fis\fermata
+    r8 g\pp g4. g8 fis4
+    g1\fermata \bar "||" %114 finis
+  }
+}
+
+AudituiSopranoLyrics = \lyricmode {
+  Au -- %103
+  di -- tu -- i me -- o da -- bis
+  gau -- _ _ _ %105
+  _ di -- um et lae -- ti -- ti --
+  am,
+  da -- bis gau --
+  di -- um et lae -- ti -- ti --
+  am, et ex -- %110
+  sul -- ta --
+  bunt os -- sa
+  hu -- mi -- li -- a --
+  ta. %114 finis
+}

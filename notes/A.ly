@@ -143,3 +143,38 @@ TibiSoliAltoLyrics = \lyricmode {
   me ma -- ter me --
   a. %79 finis
 }
+
+AudituiAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAuditui
+      \set Score.currentBarNumber = #103
+    \mvTr d2\fE^\tuttiE es4 es8 es
+    d g, g' g f16[ g f g] f[ g f g]
+    es[ f es f] es[ f es f] d8 d16 d g4~ %105
+    g8 g fis8. fis16 g4 r
+    r g8 g a16[( b a b] a[ b a b]
+    c8) g16 g g8 c, f2~
+    f2. f4
+    f r r8 f f f %110
+    e!16[ f e f] e[ f e f] d[ e d e] d[ e d e]
+    c4 c \tempoAudituiB c c\fermata
+    r8 b\pp b b a2
+    h1\fermata \bar "||" %114 finis
+  }
+}
+
+AudituiAltoLyrics = \lyricmode {
+  Au -- di -- tu -- i %103
+  me -- o da -- bis gau -- _
+  _ _ _ di -- um et __ %105
+  lae -- ti -- ti -- am,
+  da -- bis gau --
+  di -- um et lae -- ti --
+  ti --
+  am, et ex -- sul -- %110
+  ta -- _ _ _
+  _ bunt os -- sa
+  hu -- mi -- li -- a --
+  ta. %114 finis
+}

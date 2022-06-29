@@ -84,3 +84,23 @@ EcceEnimViolaI = {
     \tempoEcceEnimB c h2 c2.\fermata \bar "||" %102 finis
   }
 }
+
+AudituiViolaI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoAuditui
+      \set Score.currentBarNumber = #103
+    d2\fE es4 es8 es
+    d g, g' g f16 g f g f g f g
+    es f es f es f es f d8 d16 d g4~ %105
+    g8 g fis8. fis16 g4 r
+    r g8 g a16 b a b a b a b
+    c8 g16 g g8 c, f2~
+    f2. f4
+    f r r8 f f f %110
+    e!16 f e f e f e f d e d e d e d e
+    c4 c \tempoAudituiB c c\fermata
+    r8 b\pp b b a2
+    h1\fermata \bar "||" %114 finis
+  }
+}

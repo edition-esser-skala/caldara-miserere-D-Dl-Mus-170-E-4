@@ -1,25 +1,6 @@
 MiserereOrgano = {
   \relative c {
-    \clef treble \key g \dorian \time 4/4 \newSpacingSection \tempoAudituiMeo
-      \revert Staff.TimeSignature.style
-    << {
-      r2 g' \noBreak
-      b4 b8 b a d, d' d
-      c16 d c d c d c d b c b c b c b c
-    } \\ {
-      \mvTr d,2\fE-\tutti es4 es8 es
-      d g, g' g f16 g f g f g f g
-      es f es f es f es f d8 d g4
-    } >>
-    \clef bass d2 es4 es8 es
-    d g, g' g f16 g f g f g f g
-    es f es f es f es f d8 d b b
-    f' f, b4 f' f,
-    b8 b' b b a a a a
-    g g g g f f f f
-    es es es es \tempoAudituiMeoB d4-! d-!
-    r8 cis\pp cis cis d2 \noBreak
-    g,1\fermata \bar "||"
+
     \clef "treble_8" \key c \dorian \newSpacingSection \tempoAverteFaciem
       \mvTr c8\pE-\solo-\rip c, r c' es d es d \noBreak
     es d r c h c h c
@@ -152,8 +133,7 @@ MiserereOrgano = {
 
 
 
-Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
+
 A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
 et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
 Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.

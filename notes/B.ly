@@ -183,3 +183,34 @@ EcceEnimBassoLyrics = \lyricmode {
   de -- al -- ba --
   bor. %102 finis
 }
+
+AudituiBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAuditui
+      \set Score.currentBarNumber = #103
+    R1*3 %105
+    \mvTr d2\fE^\tuttiE es4 es8 es
+    d g, g' g f16[ g f g] f[ g f g]
+    es[ f es f] es[ f es f] d8 d16 d b8 b
+    f'8. f16 b,8 b f'4. f8
+    b, b' b b a16[ b a b] a[ b a b] %110
+    g[ a g a] g[ a g a] f[ g f g] f[ g f g]
+    es[ f es f] es[ f] es([ f]) \tempoAudituiB d4 d\fermata
+    r8 cis\pp cis cis d2
+    g,1\fermata \bar "||" %114 finis
+  }
+}
+
+AudituiBassoLyrics = \lyricmode {
+  Au -- di -- tu -- i %106
+  me -- o da -- bis gau -- _
+  _ _ _ di -- um et lae --
+  ti -- ti -- am, lae -- ti -- ti --
+  am, et ex -- sul -- ta -- _ %110
+  _ _ _ _
+  _ _ bunt os -- sa
+  hu -- mi -- li -- a --
+  ta. %114 finis
+}
+}

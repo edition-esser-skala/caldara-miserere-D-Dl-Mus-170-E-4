@@ -130,3 +130,21 @@ EcceEnimViolinoII = {
     \tempoEcceEnimB g2. c,\fermata \bar "||" %102 finis
   }
 }
+
+AudituiViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoAuditui
+      \set Score.currentBarNumber = #103
+    R1*3 %105
+    r2 g'\fE
+    b4 b8 b a d, d' d
+    c16 d c d c d c d b c b c b c b c
+    a8 a16 a b4. b8 a8. a16
+    b8 d d d c16 d c d c d c d %110
+    b c b c b c b c a b a b a b a b
+    g4 g \tempoAudituiB a a\fermata
+    r8 g\pp g g d2
+    d1\fermata \bar "||" %114 finis
+  }
+}

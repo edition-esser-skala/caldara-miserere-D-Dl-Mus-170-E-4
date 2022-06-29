@@ -148,3 +148,33 @@ TibiSoliTenoreLyrics = \lyricmode {
   me ma -- ter me --
   a. %79 finis
 }
+
+AudituiTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAuditui
+      \set Score.currentBarNumber = #103
+    R1*3 %105
+    r2 \mvTr g\fE^\tuttiE
+    b4 b8 b a d, d' d
+    c16[ d c d] c[ d c d] b[ c b c] b[ c b c]
+    a8 a16 a b4. b8 a8. a16
+    b8 d d d c16[ d c d] c[ d c d] %110
+    b[ c b c] b[ c b c] a[ b a b] a[ b a b]
+    g4 g \tempoAudituiB a a\fermata
+    r8 g\pp g g d2
+    d1\fermata \bar "||" %114 finis
+  }
+}
+
+AudituiTenoreLyrics = \lyricmode {
+  Au -- %106
+  di -- tu -- i me -- o da -- bis
+  gau -- _ _ _
+  _ di -- um et lae -- ti -- ti --
+  am, et ex -- sul -- ta -- _ %110
+  _ _ _ _
+  _ bunt os -- sa
+  hu -- mi -- li -- a --
+  ta. %114 finis
+}

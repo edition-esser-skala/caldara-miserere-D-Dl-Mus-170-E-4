@@ -162,11 +162,11 @@
   %           \set GrandStaff.instrumentName = "ob"
   %           \new Staff {
   %             \set Staff.instrumentName = "1"
-  %             \TibiSoliOboeI
+  %             \AudituiOboeI
   %           }
   %           \new Staff {
   %             \set Staff.instrumentName = "2"
-  %             \TibiSoliOboeII
+  %             \AudituiOboeII
   %           }
   %         >>
   %       >>
@@ -175,127 +175,207 @@
   %           \set GrandStaff.instrumentName = "vl"
   %           \new Staff {
   %             \set Staff.instrumentName = "1"
-  %             \TibiSoliViolinoI
+  %             \AudituiViolinoI
   %           }
   %           \new Staff {
   %             \set Staff.instrumentName = "2"
-  %             \TibiSoliViolinoII
+  %             \AudituiViolinoII
   %           }
   %         >>
   %         \new GrandStaff <<
   %           \set GrandStaff.instrumentName = "vla"
   %           \new Staff {
   %             \set Staff.instrumentName = "1"
-  %             \TibiSoliViolaI
+  %             \AudituiViolaI
   %           }
   %           \new Staff {
   %             \set Staff.instrumentName = "2"
-  %             \TibiSoliViolaII
+  %             \AudituiViolaII
   %           }
   %         >>
   %       >>
   %       \new ChoirStaff <<
   %         \new Staff {
   %           \set Staff.instrumentName = "S"
-  %           \new Voice = "Soprano" { \dynamicUp \TibiSoliSoprano }
+  %           \new Voice = "Soprano" { \dynamicUp \AudituiSoprano }
   %         }
-  %         \new Lyrics \lyricsto Soprano \TibiSoliSopranoLyrics
+  %         \new Lyrics \lyricsto Soprano \AudituiSopranoLyrics
   %
   %         \new Staff {
   %           \set Staff.instrumentName = "A"
-  %           \new Voice = "Alto" { \dynamicUp \TibiSoliAlto }
+  %           \new Voice = "Alto" { \dynamicUp \AudituiAlto }
   %         }
-  %         \new Lyrics \lyricsto Alto \TibiSoliAltoLyrics
+  %         \new Lyrics \lyricsto Alto \AudituiAltoLyrics
   %
   %         \new Staff {
   %           \set Staff.instrumentName = "T"
-  %           \new Voice = "Tenore" { \dynamicUp \TibiSoliTenore }
+  %           \new Voice = "Tenore" { \dynamicUp \AudituiTenore }
   %         }
-  %         \new Lyrics \lyricsto Tenore \TibiSoliTenoreLyrics
+  %         \new Lyrics \lyricsto Tenore \AudituiTenoreLyrics
   %
   %         \new Staff {
   %           \set Staff.instrumentName = "B"
-  %           \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+  %           \new Voice = "Basso" { \dynamicUp \AudituiBasso }
   %         }
-  %         \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+  %         \new Lyrics \lyricsto Basso \AudituiBassoLyrics
   %       >>
   %       \new StaffGroup <<
   %         \new Staff {
   %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
   %           % \transpose c c,
-  %           \TibiSoliOrgano
+  %           \AudituiOrgano
   %         }
   %       >>
-  %       \new FiguredBass { \TibiSoliBassFigures }
+  %       \new FiguredBass { \AudituiBassFigures }
   %     >>
   %     \layout { }
   %     \midi { \tempo 4 = 110 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Ecce enim veritatem"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     system-system-spacing.basic-distance = #19.5
+  %     system-system-spacing.minimum-distance = #19.5
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \EcceEnimViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \EcceEnimViolinoII
+  %           }
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vla"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \EcceEnimViolaI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \EcceEnimViolaII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \EcceEnimOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \EcceEnimBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2. = 45 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Ecce enim veritatem"
+    \subsection "Auditui meo"
     \addTocEntry
-    \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      system-system-spacing.basic-distance = #19.5
-      system-system-spacing.minimum-distance = #19.5
-      systems-per-page = #2
-    }
     \score {
       <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "ob"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AudituiOboeI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AudituiOboeII
+            }
+          >>
+        >>
         \new StaffGroup <<
           \new GrandStaff \with { \smallGroupDistance } <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \EcceEnimViolinoI
+              \AudituiViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \EcceEnimViolinoII
+              \AudituiViolinoII
             }
           >>
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vla"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \EcceEnimViolaI
+              \AudituiViolaI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \EcceEnimViolaII
+              \AudituiViolaII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
+            \new Voice = "Soprano" { \dynamicUp \AudituiSoprano }
           }
-          \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
+          \new Lyrics \lyricsto Soprano \AudituiSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \AudituiAlto }
+          }
+          \new Lyrics \lyricsto Alto \AudituiAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \AudituiTenore }
+          }
+          \new Lyrics \lyricsto Tenore \AudituiTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
+            \new Voice = "Basso" { \dynamicUp \AudituiBasso }
           }
-          \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
+          \new Lyrics \lyricsto Basso \AudituiBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \EcceEnimOrgano
+            \AudituiOrgano
           }
         >>
-        \new FiguredBass { \EcceEnimBassFigures }
+        \new FiguredBass { \AudituiBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2. = 45 }
+      \midi { \tempo 4 = 105 }
     }
   }
 }

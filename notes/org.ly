@@ -253,3 +253,44 @@ EcceEnimBassFigures = \figuremode {
   <5 3> <6 4> <6> <5 _->2 <6 \t>4
   <6 4> <5 _!>2 r2. %102 finis
 }
+
+AudituiOrgano = {
+  \relative c {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoAuditui
+      \set Score.currentBarNumber = #103
+    << {
+      r2 g''
+      b4 b8 b a d, d' d
+      c16 d c d c d c d b c b c b c b c %105
+    } \\ {
+      \mvTr d,2\fE-\tutti es4 es8 es
+      d g, g' g f16 g f g f g f g
+      es f es f es f es f d8 d g4 %105
+    } >>
+    \clef bass d,2 es4 es8 es
+    d g, g' g f16 g f g f g f g
+    es f es f es f es f d8 d b b
+    f' f, b4 f' f,
+    b8 b' b b a a a a %110
+    g g g g f f f f
+    es es es es \tempoAudituiB d4-! d-!\fermata
+    r8 cis\pp cis cis d2
+    g,1\fermata \bar "||" %114 finis
+  }
+}
+
+AudituiBassFigures = \figuremode {
+  r1 %103
+  r
+  r %105
+  <5 4>4 <\t _+> <7> <6>
+  <6>8 <5>4. <6>2
+  q q
+  r <5 4>4 <\t 3>
+  r2 <6> %110
+  <6!> <6>
+  q <7 _+>
+  r8 <7 [_!]>4. <4>4 <_+>
+  <_!>1 %114 finis
+}
