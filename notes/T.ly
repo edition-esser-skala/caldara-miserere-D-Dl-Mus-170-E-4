@@ -312,3 +312,46 @@ LiberaTenoreLyrics = \lyricmode {
   cta -- _ _ _
   _ _ be -- ris. %214 finis
 }
+
+SacrificiumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 \mvTr es2\fE^\tuttiE es4
+    c c8 c c4 c
+    c8. c16 c8 c c4 c %220
+    c b8.[ c16] d2
+    b h
+    g1
+    as2 r
+    des4 des c2 %225
+    c c8 c c c
+    b1~
+    b4 c2 d4
+    g, c8[ b] a!2
+    a\fermata r %230
+    b8 b b b e,4 a
+    h2 e,4 a
+    a1\fermata \bar "||" %233 finis
+  }
+}
+
+SacrificiumTenoreLyrics = \lyricmode {
+  Sa -- cri -- %218
+  fi -- ci -- um De -- o
+  spi -- ri -- tus con -- tri -- bu -- %220
+  la -- _ _
+  _ _
+  _
+  tus,
+  cor con -- tri -- %225
+  tum et hu -- mi -- li --
+  a --
+  _ _
+  _ _ _
+  tum, %230
+  De -- us, non de -- spi -- _
+  _ _ ci --
+  es. %233 finis
+}

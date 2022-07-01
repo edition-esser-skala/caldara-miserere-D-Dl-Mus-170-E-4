@@ -509,8 +509,88 @@
   %     \midi { \tempo 2. = 50 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Libera me"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \LiberaOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \LiberaOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \LiberaViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \LiberaViolinoII
+  %           }
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vla"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \LiberaViolaI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \LiberaViolaII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \LiberaSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \LiberaSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \LiberaAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \LiberaAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \LiberaTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \LiberaTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \LiberaBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \LiberaBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \LiberaOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \LiberaBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2. = 50 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Libera me"
+    \subsection "Sacrificium Deo"
     \addTocEntry
     \score {
       <<
@@ -519,11 +599,11 @@
             \set GrandStaff.instrumentName = "ob"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \LiberaOboeI
+              \SacrificiumOboeI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \LiberaOboeII
+              \SacrificiumOboeII
             }
           >>
         >>
@@ -532,61 +612,61 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \LiberaViolinoI
+              \SacrificiumViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \LiberaViolinoII
+              \SacrificiumViolinoII
             }
           >>
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vla"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \LiberaViolaI
+              \SacrificiumViolaI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \LiberaViolaII
+              \SacrificiumViolaII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \LiberaSoprano }
+            \new Voice = "Soprano" { \dynamicUp \SacrificiumSoprano }
           }
-          \new Lyrics \lyricsto Soprano \LiberaSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SacrificiumSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \LiberaAlto }
+            \new Voice = "Alto" { \dynamicUp \SacrificiumAlto }
           }
-          \new Lyrics \lyricsto Alto \LiberaAltoLyrics
+          \new Lyrics \lyricsto Alto \SacrificiumAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \LiberaTenore }
+            \new Voice = "Tenore" { \dynamicUp \SacrificiumTenore }
           }
-          \new Lyrics \lyricsto Tenore \LiberaTenoreLyrics
+          \new Lyrics \lyricsto Tenore \SacrificiumTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \LiberaBasso }
+            \new Voice = "Basso" { \dynamicUp \SacrificiumBasso }
           }
-          \new Lyrics \lyricsto Basso \LiberaBassoLyrics
+          \new Lyrics \lyricsto Basso \SacrificiumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \LiberaOrgano
+            \SacrificiumOrgano
           }
         >>
-        \new FiguredBass { \LiberaBassFigures }
+        \new FiguredBass { \SacrificiumBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2. = 50 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

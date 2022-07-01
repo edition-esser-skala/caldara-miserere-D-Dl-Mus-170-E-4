@@ -310,3 +310,46 @@ LiberaAltoLyrics = \lyricmode {
   iu -- sti -- ti -- am
   tu -- am. %194 finis
 }
+
+SacrificiumAlto = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 \mvTr g'2\fE^\tuttiE g4
+    g g8 g f4 f
+    f8. f16 f8 f f4 f %220
+    fis g2 f?4~
+    f es2 d4~
+    d c des2
+    c r
+    f4 g a!2 %225
+    g f8 f f f
+    f2~ f8[ f es d]
+    es2 f
+    es1
+    es2\fermata r %230
+    d8 d d d cis4 d~
+    d8[ cis] d2 cis4
+    d1\fermata \bar "||" %233 finis
+  }
+}
+
+SacrificiumAltoLyrics = \lyricmode {
+  Sa -- cri -- %218
+  fi -- ci -- um De -- o
+  spi -- ri -- tus con -- tri -- bu -- %220
+  la -- _ _
+  _ _
+  _ _
+  tus,
+  cor con -- tri -- %225
+  tum et hu -- mi -- li --
+  a --
+  _ _
+  _
+  tum, %230
+  De -- us, non de -- spi -- _
+  _ ci --
+  es. %233 finis
+}

@@ -312,3 +312,55 @@ LiberaSopranoLyrics = \lyricmode {
   iu -- sti -- ti -- am tu --
   _ am. %194 finis
 }
+
+SacrificiumSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 \mvTr b'2\fE^\tuttiE b4
+    b b8 b as4 as
+    a8. a16 a8 a a4 a %220
+    a b as2
+    g f
+    es e
+    f f'4 des
+    b2 b %225
+    b8 b c b a!2
+    as4 b8[ as] g2~
+    g4 c8[ b] a4 b~
+    b as8[ g] fis2
+    fis\fermata d'8 d b a %230
+    g2. f4~
+    f8[ e] f4 e4. e8
+    fis1\fermata \bar "||" %233 finis
+  }
+}
+
+SacrificiumSopranoLyrics = \lyricmode {
+  Sa -- cri -- %218
+  fi -- ci -- um De -- o
+  spi -- ri -- tus con -- tri -- bu -- %220
+  la -- _ _
+  _ _
+  _ _
+  tus, cor con --
+  tri -- tum %225
+  et hu -- mi -- li -- a --
+  _ _ _
+  _ _ _
+  _ _
+  tum, De -- us, non de -- %230
+  spi -- _
+  _ _ ci --
+  es. %233 finis
+}
+
+% Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
+% ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
+% Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
+% ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
+% tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
+% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
+% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.

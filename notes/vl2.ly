@@ -276,3 +276,27 @@ LiberaViolinoII = {
     \time 3/4 d2.\fermata \bar "||" %217 finis
   }
 }
+
+SacrificiumViolinoII = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 b'2\fE b4
+    b b8 b as4 as
+    a8. a16 a8 a a4 a %220
+    a b as2
+    g f
+    es e
+    f f'4 des
+    b2 b %225
+    b8 b c b a!2
+    as4 b8 as g2~
+    g4 c8 b a4 b~
+    b as8 g fis2
+    fis\fermata d'8 d b a %230
+    g2. f4~
+    f8 e f4 e4. e8
+    fis1\fermata \bar "||" %233 finis
+  }
+}

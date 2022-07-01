@@ -183,3 +183,27 @@ LiberaViolaII = {
     \time 3/4 g2.\fermata \bar "||" %217 finis
   }
 }
+
+SacrificiumViolaII = {
+  \relative c' {
+    \clef tenor
+    \key b \major \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 es2\fE es4
+    c c8 c c4 c
+    c8. c16 c8 c c4 c %220
+    c b8. c16 d2
+    b h
+    g1
+    as2 r
+    des4 des c2 %225
+    c c8 c c c
+    b1~
+    b4 c2 d4
+    g, c8 b a!2
+    a\fermata r %230
+    b8 b b b e,4 a
+    h2 e,4 a
+    a1\fermata \bar "||" %233 finis
+  }
+}

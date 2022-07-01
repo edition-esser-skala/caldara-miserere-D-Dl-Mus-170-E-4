@@ -344,3 +344,46 @@ LiberaBassoLyrics = \lyricmode {
   non de -- le -- cta -- _
   _ _ be -- ris. %214 finis
 }
+
+SacrificiumBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 \mvTr es2\fE^\tuttiE es4
+    e e8 e f4 f
+    es8. es16 es8 es es4 es %220
+    d1
+    es2 h
+    c b
+    as r
+    b'4 g e2 %225
+    e es8 es f es
+    d2 es~
+    es2. d4
+    c1
+    c2\fermata r %230
+    b8 b b b a2
+    gis a4. a8
+    d1\fermata \bar "||" %233 finis
+  }
+}
+
+SacrificiumBassoLyrics = \lyricmode {
+  Sa -- cri -- %218
+  fi -- ci -- um De -- o
+  spi -- ri -- tus con -- tri -- bu -- %220
+  la --
+  _  _
+  _ _
+  tus,
+  cor con -- tri -- %225
+  tum et hu -- mi -- li --
+  a -- _
+  _
+  _
+  tum, %230
+  De -- us, non de -- spi --
+  _ _ ci --
+  es. %233 finis
+}

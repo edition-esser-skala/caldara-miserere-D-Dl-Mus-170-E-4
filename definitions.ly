@@ -28,7 +28,7 @@ tempoRedde = \tempoMarkup "Allegro"
 tempoLibera = \tempoMarkup "Andante"
   tempoLiberaB = \tempoMarkup "Adagio"
   tempoLiberaC = \tempoMarkup "Andante"
-% tempoSacrificium = \tempoMarkup "Grave"
+tempoSacrificium = \tempoMarkup "Grave"
 % tempoBenigne = \tempoMarkup "Andante"
 
 

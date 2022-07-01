@@ -538,3 +538,46 @@ LiberaBassFigures = \figuremode {
   <_+>1 \bo <[6 5]>4 \bc <[_+ \l]>
   r2. %217 finis
 }
+
+SacrificiumOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #218
+    r4 \mvTr es2\fE-\tutti es4
+    e2 f
+    es1 %220
+    d
+    es2 h
+    c b
+    as \clef treble f'''4 des
+    \clef bass b, g e2~ %225
+    e es8 es f es
+    d2 es~
+    es2. d4
+    c1~
+    c2\fermata \clef treble d''8^\critnote d b a! %230
+    \clef bass b,,2 a
+    gis a
+    d1\fermata \bar "||" %233 finis
+  }
+}
+
+SacrificiumBassFigures = \figuremode {
+  r4 <5>2. %218
+  <6 5>2 <_->
+  <6 4! 2>1 %220
+  <7 _+>4 <6 4> <5- \t> <\t _!>
+  <9 3> <8> <5 4> <\t 3>
+  <9> <8> <6 4! _->2
+  <6>2 <1>4 q
+  <5 _-> <5-> \bo <6 5 [4!]>2 %225
+  \bc <6 5 [3]> <6 4! 2>4. <\t \t \t>8
+  <6 5- 3>2 \bo <[9]>4 \bc <[8]>
+  <5> <6> <6 4! 2> <6>
+  <7>4 \bo <[8] 6->8 \bc <[7] 5> <6! 4+ 3>2
+  <\t \t \t>1 %230
+  <6>2 <7 [5!] _+>4 <[6! 4]>
+  <7 _!>2 <5! 4>4 <\t _+>
+  <_+>1 %233 finis
+}
