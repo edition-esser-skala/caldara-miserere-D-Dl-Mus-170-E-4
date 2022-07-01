@@ -132,3 +132,55 @@ ReddeViolaI = {
     f1\fermata \bar "||" %170 finis
   }
 }
+
+LiberaViolaI = {
+  \relative c' {
+    \clef alto
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    f4\fE f f b, g' a,
+    b f' f f r e
+    c c d es c a
+    f f' d g, g' es
+    a, a' f b, b' g %175
+    c a g~ g f4. f8
+    f2 r4 r2 r4
+    R1.*3 %180
+    r2 r4 r c\fE c
+    b g e c c' d~\pE
+    d b es~ es c f~
+    f d g~ g g g
+    f d b' r g c, %185
+    c' f,8 g a4 b, c c,
+    c'\fE c c f f c
+    c f,8[ g a f] b2 r4
+    R1.
+    r2 r4 r f'\pE g~ %190
+    g es a~ a f b~
+    b g c f,-! b-! r
+    R1.
+    \tempoLiberaB r2 r4 \tempoLiberaC \mvTr d,4.\pE-\markup \remark "con sordino" es8 f4
+    g f es \appoggiatura es8 d4 es8[ d c b] %195
+    a es' \appoggiatura es d4. c8 h[ as'( g f! e f)]
+    e[ des( c b a! b]) a[ ges'( f es d? es)]
+    d[ b'( a g fis g)] fis2 \once \tieDashed g4~
+    g fis2\trill g r4
+    R1. %200
+    r8 b[( a g fis g)] fis[ es!( d c h c)]
+    h[ as'( g f es f)] es4 r r
+    R1.*2
+    r2 r4 r8 g([ f es d es)] %205
+    d[ as'( g f e f)] e[ b'( a? g fis g)]
+    fis4 r r r2 r4
+    R1.*3 %210
+    r4 a8([ g fis g)] fis[ es!( d c! h c)]
+    h[ \once \slurDashed as'( g f es f)] es2 r4
+    R1.
+    r2 r4 b'4. a8 g4
+    as4 g fis g8[ b( a g fis g)] %215
+    fis[ es!( d c b c)] b4 a2\trill
+    \time 3/4 g2.\fermata \bar "||" %217 finis
+  }
+}

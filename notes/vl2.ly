@@ -223,3 +223,56 @@ ReddeViolinoII = {
     a1\fermata \bar "||" %170 finis
   }
 }
+
+LiberaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    \mvTr b'4.\fE-\tuttiE c8 d4 es d c
+    \appoggiatura c b2 c4 d c b
+    a8. g16 f4 b~ b a c~
+    c b b es es es~
+    es d d g g, c %175
+    a f b~ b a2\trill
+    b r4 r2 r4
+    r r \mvTr f'~\p-\vv f f e
+    f f, r r2 r4
+    R1. %180
+    r2 r4 r r \mvTr f~\f-\tutti
+    f e g~ g f \mvTr f\p-\vv
+    b b b~ b a a
+    d d d~ d c c
+    f f f~ f e e %185
+    a a, r r2 r4
+    \mvTr a4.\f-\tutti b8 c4 d c b
+    a4. b8 c4~ c b r
+    R1.
+    r4 r \mvTr c~\pE-\vv c b b %190
+    es es es~ es d d
+    g g g a, b r
+    R1.
+    \tempoLiberaB r2 r4 \tempoLiberaC \mvTr b,4.\pE-\markup \remark "con sordino"-\vv c8 d4
+    es d c \appoggiatura c8 b4 c8[ b a g] %195
+    d'2 r4 g,2 r4
+    g2 r4 c2 r4
+    r8 d([ c b a b)] a2 b4
+    a a2\trill g r4
+    R1. %200
+    r2 r4 a2 r4
+    g2 r4 g r r
+    R1.*3 %205
+    r4 r g g r a
+    a r r r2 r4
+    R1.*3 %210
+    r2 r4 a2 r4
+    g2 r4 g2 r4
+    R1.
+    r2 r4 d'4. c8 b4
+    c b a! b8[ d( c b a b)] %215
+    a4 d2 r4 es d
+    \time 3/4 d2.\fermata \bar "||" %217 finis
+  }
+}

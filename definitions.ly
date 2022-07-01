@@ -6,9 +6,11 @@
 \include "ees.ly"
 
 rip = \markup \remark "Rip."
+ripE = \markup \remarkE "Rip."
 senzaRip = \markup \remark "senza Rip."
 adlibitum = \markup \remark "ad libitum"
 adlibitumE = \markup \remarkE "ad libitum"
+vv = \markup \remark "Vv."
 
 
 tempoMiserere = \tempoMarkup "Adagio"
@@ -23,9 +25,9 @@ tempoAuditui = \tempoMarkup "Allegro"
 tempoAverte = \tempoMarkup "Andante"
 tempoRedde = \tempoMarkup "Allegro"
   tempoDocebo = \tempoMarkup "Adagio"
-% tempoLiberaMe = \tempoMarkup "Andante"
-%   tempoLiberaMeB = \tempoMarkup "Adagio"
-%   tempoLiberaMeC = \tempoMarkup "Andante"
+tempoLibera = \tempoMarkup "Andante"
+  tempoLiberaB = \tempoMarkup "Adagio"
+  tempoLiberaC = \tempoMarkup "Andante"
 % tempoSacrificium = \tempoMarkup "Grave"
 % tempoBenigne = \tempoMarkup "Andante"
 

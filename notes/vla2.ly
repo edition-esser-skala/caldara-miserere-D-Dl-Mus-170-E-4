@@ -132,3 +132,54 @@ ReddeViolaII = {
     c1\fermata \bar "||"
   }
 }
+
+LiberaViolaII = {
+  \relative c' {
+    \clef tenor
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    f4\fE f f b, g' a,
+    b f' f f r e
+    c c d es c a
+    f f' d g, g' es
+    a, a' f b, b' g %175
+    c a g~ g f4. f8
+    f2 r4 r2 r4
+    R1.*3 %180
+    r2 r4 r c\fE c
+    b g e c c' d~\pE
+    d b es~ es c f~
+    f d g~ g g g
+    f d b' r g c, %185
+    c' f,8 g a4 b, c c,
+    c'\fE c c f f c
+    c f,8[ g a f] b2 r4
+    R1.
+    r2 r4 r f'\pE g~ %190
+    g es a~ a f b~
+    b g c f,-! b-! r
+    R1.
+    \tempoLiberaB r2 r4 \tempoLiberaC \mvTr b,4.\pE-\markup \remark "con sordino" c8 d4
+    es d c \appoggiatura c8 b4 c8[ b a g] %195
+    fis2 r4 g2 r4
+    g2 r4 f2 r4
+    r8 d'([ c b a b)] a2 b4
+    a a2\trill g r4
+    R1. %200
+    r2 r4 a2 r4
+    g2 r4 g r r
+    R1.*3 %205
+    r4 r g g r a
+    a r r r2 r4
+    R1.*3 %210
+    r2 r4 a2 r4
+    g2 r4 g2 r4
+    R1.
+    r2 r4 d'4. c8 b4
+    c b a! b8[ d( c b a b)] %215
+    a4 fis2 g4 g4.\trill fis8
+    \time 3/4 g2.\fermata \bar "||" %217 finis
+  }
+}

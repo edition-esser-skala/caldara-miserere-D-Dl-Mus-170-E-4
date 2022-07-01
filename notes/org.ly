@@ -431,3 +431,110 @@ ReddeBassFigures = \figuremode {
   <7 _!>4 <6- 4> <5 \t> <\t _!>
   <_!>1 %170 finis
 }
+
+LiberaOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    \mvTr b2.\fE-\solo-\rip g'4 es f
+    b,2 f'4 b, c c,
+    f f'8 es! d4 c f f,
+    b d b c es c
+    d f d es g es %175
+    f2 g4 es f f,
+    b2. \mvTr g'4\pE-\orgE es f
+    b,2 f'4 d c c,
+    f a f b2.
+    es2 d4 c2. %180
+    b \mvTr f'4\fE-\ripE f, f'
+    b, c2 f,2.
+    \mvTr g\pE-\orgE a
+    b c
+    d c %185
+    f,4. g8 a4 b c c,
+    \mvTr f2\fE-\ripE f'4 d d e
+    f4. g8 a4 b \mvTr b,2\pE-\orgE
+    es!2. f
+    b,8 c d es f4 b,2. %190
+    c d
+    es f4 g r
+    d b f' g f8 es d c
+    \tempoLiberaB b4 es f \tempoLiberaC b,2.\pp
+    es4 f f, b b c %195
+    d d d g,2 r4
+    c2 r4 f,2 r4
+    b c2 d8[ c b a] g4
+    c d d, g2.
+    c2 d4 g fis2 %200
+    g4 es2 d r4
+    g,2 r4 c2 e4
+    f f,8[ g' f es] d c b2
+    es4. f8[ g es] c4. d8[ es c]
+    f[ g f es d c] b es f4 f, %205
+    b r h c r cis
+    d fis d g g, g'
+    a cis a d d8 c b a
+    g4 c8[ b a g] f4 b8 a g f
+    e4 c2 f,4. a8 d b %210
+    g g' a4 a, d2 r4
+    g,2 r4 c2 r4
+    c2 r4 a fis2
+    g8 c d4 d, g2 r4
+    c2 d4 g, c2 %215
+    d2. es4 c d \noBreak
+    \time 3/4 g,2.\fermata \bar "||" %217 finis
+  }
+}
+
+LiberaBassFigures = \figuremode {
+  r2. <6>4 \bo <[7]>2 %171
+  <9>4 \bc <[8]>2. <6 4>4 <5 _!>
+  \bo <[9]>4 \bc <[8]> <6> <7> <3>2
+  <9>4 <6>2 <9>4 <6>2
+  <9>4 <6>2 <9>4 <6>2 %175
+  <7> <5>4 <6 5> <[3]>2
+  r2. <6>4 <7 5> <_!>
+  r2 <_!>4 <6> <6 4> <5 _!>
+  r <6> <7-> <[8]>2 <7->4
+  <9> <8> <6> <7> <6> <5> %180
+  <6 4> <5 3>2 <6 4>4 <5 3>2
+  r4 <8 _!> <7 \t> \bo <[9 4]> \bc <[8 3]>2
+  <9 3>4 <8> <[6]> <9 3> <8> <[6]>
+  <9 3> <8> <[6]> <9 _!> <8>2
+  <9! 3>4 <8> <[6]> <5 4> <\t _!>2 %185
+  <9>4 <8> \bo <[6]>2 \bc <[_!]>
+  r2. <6>2 <\t>4
+  \bo <[9]>4 <8> <5-> <9> \bc <[8]>2
+  <5>2. <7>
+  r <9>4 <8> <6> %190
+  <9 3> <8> <6> <9 3> <8> <6>
+  <9 3> <8> <6> <7> <5>2
+  <6>2. <5 3>2 \bassFigureExtendersOn q8 q \bassFigureExtendersOff
+  r4 \bo <[6 5]>2 r2.
+  r4 <8 6> \bc <[7 5]> r2 <6>4 %195
+  <_+>2. <[_!]>
+  <_!> q
+  r4 <6>2 <5 _+>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff r4
+  <6 5 _-> <_+>2 r2.
+  \bo <[8 6-]>4 \bc <[7 5]> <[5!] _+>2 <[6]> %200
+  r4 <6>2 <_+>2.
+  <_!>1 r4 \bo <[6]>
+  r2. \bc q
+  r1.
+  r2. r8 <[6]> r2 %205
+  r2 <6>4 <[_!]>2 <6 [_!]>4
+  \bo <[_+ \l]>2. r2 <6>8 <5>
+  <5! _+>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff \bc <[_! \l]>2.
+  r1.
+  <6>4 <_!>2 \bo <[9]>4 <8>8 <5! _+>4. %210
+  <_!>4 <5! _+>2 <_+>2.
+  <_!> \bc <[_-]>
+  <6>2. <6\\>4 <6>2
+  r4 <4> <_+> r2.
+  \bo <[8] 6->4 <7 5> <5! _+>2 \bc <[6]> %215
+  <_+>1 \bo <[6 5]>4 \bc <[_+ \l]>
+  r2. %217 finis
+}

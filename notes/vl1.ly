@@ -225,3 +225,56 @@ ReddeViolinoI = {
     f1\fermata \bar "||" %170 finis
   }
 }
+
+LiberaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    R1.
+    \mvTr f'4.\fE-\tuttiE g8 a4 b a g
+    \appoggiatura g f2 f4 g f es
+    d2 d4~ d c c
+    f f f f es es %175
+    es2 d4 c c2\trill
+    b \mvTr b'4~\p-\vv b b a
+    b b, r r2 r4
+    R1.*2 %180
+    r2 r4 \mvTr f4.\fE-\tutti g8 a4
+    d c b \appoggiatura b a2 \mvTr a4~\pE-\vv
+    a g g c c c~
+    c b b e e e~
+    e d d g g g~ %185
+    g f r r2 r4
+    \mvTr f4.\fE-\tutti g8 a4 b a g
+    \appoggiatura g f2 es!4 d4. es8 f4
+    R1.
+    r2 r4 r r \mvTr d~\pE-\vv %190
+    d c c f f f~
+    f es es~ es d r
+    R1.
+    \tempoLiberaB r2 r4 \tempoLiberaC \mvTr d,4.\pE-\markup \remark "con sordino"-\vv es8 f4
+    g f es \appoggiatura es8 d4 es8[ d c b] %195
+    a es' \appoggiatura es d4. c8 h[ as'( g f! e f)]
+    e[ des( c b a! b]) a[ ges'( f es d? es)]
+    d[ b'( a g fis g)] fis2 \once \tieDashed g4~
+    g fis2\trill g r4
+    R1. %200
+    r8 b[( a g fis g)] fis[ es!( d c h c)]
+    h[ as'( g f es f)] es4 r r
+    R1.*2
+    r2 r4 r8 g([ f es d es)] %205
+    d[ as'( g f e f)] e[ b'( a? g fis g)]
+    fis4 r r r2 r4
+    R1.*3 %210
+    r4 a8([ g fis g)] fis[ es!( d c! h c)]
+    h[ \once \slurDashed as'( g f es f)] es2 r4
+    R1.
+    r2 r4 b'4. a8 g4
+    as4 g fis g8[ b( a g fis g)] %215
+    fis[ es!( d c b c)] b4 a2\trill
+    \time 3/4 g2.\fermata \bar "||" %217 finis
+  }
+}

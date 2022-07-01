@@ -264,3 +264,51 @@ ReddeTenoreLyrics = \lyricmode {
   te con -- ver -- ten --
   tur. %170 finis
 }
+
+LiberaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 3/2 \autoBeamOff \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    R1.*28 %198
+    r2 r4 \mvTr d4.\pE^\solo c8 b4
+    c b a! b d8([ c)] b([ a)] %200
+    b4( c4.) d8 d2 r4
+    r g, h c g8 d' c b?
+    a([ g)] f4 r r b8[ c d b]
+    g8[ f g a b g] es'[ f es d c b]
+    a4 a4.\trill g16[ a] b8[( c] a2) %205
+    b r4 r2 r4
+    d8. a16 a8 b c d b8([ a)] g4 es'8 d
+    cis8. h?16 a8 g' f e f4. e8 d4
+    r2 r4 r d8([ c)] b([ a)]
+    g4 c8 b a g a4. cis8 d4~ %210
+    d8[ h] cis4. d8 d2 r4
+    d2 r4 c es!8([ d)] c([ b)]
+    a4 c8[ b a g] fis4 d'8[ c b a]
+    b[ c] a4. g8 g2 r4
+    R1.*2 %216
+    \time 3/4 R2.\fermata \bar "||" %217 finis
+  }
+}
+
+LiberaTenoreLyrics = \lyricmode {
+  Do -- mi -- ne, %199
+  la -- bi -- a me -- a __ a -- %200
+  pe -- ri -- es,
+  et os me -- um an -- nun -- ti --
+  a -- bit lau --
+  _ _
+  _ _ dem tu -- %205
+  am.
+  Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri --
+  fi -- ci -- um, de -- dis -- sem u -- ti -- que,
+  ho -- lo --
+  cau -- stis non de -- le -- cta -- _ _ %210
+  _ be -- ris,
+  non, non de -- le --
+  cta -- _ _ _
+  _ _ be -- ris. %214 finis
+}

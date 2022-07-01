@@ -103,3 +103,28 @@ ReddeOboeI = {
     f1\fermata \bar "||" %170 finis
   }
 }
+
+LiberaOboeI = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    R1.
+    f'4.\fE g8 a4 b a g
+    \appoggiatura g f2 f4 g f es
+    d2 d4~ d c c
+    f f f f es es %175
+    es2 d4 c c2\trill
+    b r4 r2 r4
+    R1.*3 %180
+    r2 r4 f4.\fE g8 a4
+    d c b \appoggiatura b a2 r4
+    R1.*4 %186
+    f4.\fE g8 a4 b a g
+    \appoggiatura g f2 es!4 d4. es8 f4
+    R1.*28 %216
+    \time 3/4 R2.\fermata \bar "||" %217 finis
+  }
+}

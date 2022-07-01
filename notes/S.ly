@@ -260,3 +260,55 @@ ReddeSopranoLyrics = \lyricmode {
   te con -- ver -- ten --
   tur. %170 finis
 }
+
+LiberaSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 3/2 \autoBeamOff \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    R1.*6 %176
+    \mvTr b'4.\pE^\solo c8 d4 es d c
+    b2 r4 r2 r4
+    r f' es! d4. es8 f4
+    f es r es4. f8 es4 %180
+    es d2 d4 c r
+    r2 r4 f8([ es!)] d([ c)] b([ a)]
+    b4 b r c4. b8 a g
+    f4( d'8[ c b a] g4) g c
+    a4. g8 f4 c'2.~ %185
+    c2. d4 g,2
+    f r4 r2 r4
+    c' c c d8.[( c16 d8. es16 c8. d16]
+    es8[ d]) es2 es4( c) f
+    d2 c4 r r b %190
+    g es' c a d8.[ c16 b8. a16]
+    g4 g'8.[ f16 es8. d16] c4 b r
+    f' d c8 b b2.~
+    \tempoLiberaB b2 a4 \tempoLiberaC b2^\critnote r4
+    R1.*22 %216
+    \time 3/4 R2.\fermata \bar "||" %217 finis
+  }
+}
+
+LiberaSopranoLyrics = \lyricmode {
+  Li -- be -- ra, li -- be -- ra %177
+  me
+  de san -- gui -- ni -- bus,
+  De -- us, De -- us sa -- %180
+  lu -- tis me -- ae,
+  et __ ex -- sul --
+  ta -- bit lin -- gua, lin -- gua
+  me -- a iu --
+  sti -- ti -- am tu -- %185
+  _ _
+  am,
+  et ex -- sul -- ta --
+  bit lin -- gua
+  me -- a iu -- %190
+  sti -- ti -- am tu -- _
+  _ _ _ am,
+  iu -- sti -- ti -- am tu --
+  _ am. %194 finis
+}

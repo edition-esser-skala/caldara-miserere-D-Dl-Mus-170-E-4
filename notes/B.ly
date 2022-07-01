@@ -296,3 +296,51 @@ ReddeBassoLyrics = \lyricmode {
   te con -- ver -- ten --
   tur. %170 finis
 }
+
+LiberaBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \autoBeamOff \tempoLibera
+      \override Staff.TimeSignature.style = #'single-digit
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #171
+    R1.*28 %198
+    r2 r4 \mvTr b'4.\pE^\solo a8 g4
+    as g fis g fis2 %200
+    g4 es4. es8 d2 r4
+    r2 r4 r c e
+    f f,8 g' f es d([ c)] b4 r
+    r es8[ f g es] c[ b c d es c]
+    f[ g f es] d([ c]) d[( es] f2) %205
+    b, r4 r2 r4
+    R1.
+    r2 r4 r d'8([ c)] b([ a)]
+    g4 c8 b a g f4 b8[ a g f]
+    e4. f8 g4~ g8[ a f e f d] %210
+    b'[ g] a4. a8 d,2 r4
+    g2 r4 c,2 r4
+    c es8([ d)] c([ b)] a4 fis'8[ e? d fis]
+    g[ c,] d4. d8 g,2 r4
+    R1.*2 %216
+    \time 3/4 R2.\fermata \bar "||" %217 finis
+  }
+}
+
+LiberaBassoLyrics = \lyricmode {
+  Do -- mi -- ne, %199
+  la -- bi -- a me -- a %200
+  a -- pe -- ri -- es,
+  et os
+  me -- um an -- nun -- ti -- a -- bit
+  lau -- _
+  _ dem tu -- %205
+  am.
+
+  Ho -- lo --
+  cau -- stis non de -- le -- cta -- _
+  _ _ _ %210
+  _ _ be -- ris,
+  non, non,
+  non de -- le -- cta -- _
+  _ _ be -- ris. %214 finis
+}
