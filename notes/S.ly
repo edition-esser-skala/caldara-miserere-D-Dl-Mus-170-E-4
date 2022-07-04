@@ -356,11 +356,60 @@ SacrificiumSopranoLyrics = \lyricmode {
   es. %233 finis
 }
 
-% Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-% ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-% Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-% ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
+
 % tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
 % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
 % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
 % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+
+BenigneSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoBenigne
+      \set Score.currentBarNumber = #234
+    R1*2 %235
+    r4 r8 \mvTr es'\pE^\soloE es d r d
+    d c r c c([ d16 es)] d8 c
+    b8. a16 g8 b a a d b
+    g a16([ b)] a8 g f!8.([ e16)] d4
+    r a'8 a d g, g g %240
+    cis4 d8 e e4.\trill d8
+    d4 r r2
+    r4 r8 d d c! r es
+    es d r d d([ c)] c c
+    c8. b16 b8 b a a d16([ c)] b([ a)] %245
+    g8 g c a fis8.([ e16)] d4
+    r e8 fis g g b([ a16 g)]
+    c4 d8 es b4 a8. g16
+    g2 r
+    R1 %250
+    r8 \mvTr es'\fE^\tuttiE es es d d d d
+    d8. d16 d8 d c8. c16 c4
+    r8 es es es es4 es8 es
+    d d d4.( c16[ b] c4)
+    d1\fermata \bar "||" %255
+  }
+}
+
+BenigneSopranoLyrics = \lyricmode {
+  Be -- ni -- gne, be -- %236
+  ni -- gne, be -- ni -- gne fac,
+  Do -- mi -- ne, in bo -- na vo -- lun --
+  ta -- te tu -- a Si -- on,
+  ut ae -- di -- fi -- cen -- tur %240
+  mu -- ri Ie -- ru -- sa --
+  lem.
+  Be -- ni -- gne, be --
+  ni -- gne, be -- ni -- gne fac,
+  Do -- mi -- ne, in bo -- na vo -- lun -- %245
+  ta -- te tu -- a Si -- on,
+  ut ae -- di -- fi -- cen --
+  tur mu -- ri Ie -- ru -- sa --
+  lem.
+  %250
+  Tunc ac -- cep -- ta -- bis sa -- cri --
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau --
+  sta. %255 finis
+}

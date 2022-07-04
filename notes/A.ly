@@ -353,3 +353,25 @@ SacrificiumAltoLyrics = \lyricmode {
   _ ci --
   es. %233 finis
 }
+
+BenigneAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoBenigne
+      \set Score.currentBarNumber = #234
+    R1*17 %250
+    r8 \mvTr g'\fE^\tuttiE g g f f f f
+    f8. f16 f8 f es8. es16 es4
+    r8 g g g f4 f8 f
+    f4 f \tempoBenigneB g2
+    fis1\fermata \bar "||" %255 finis
+  }
+}
+
+BenigneAltoLyrics = \lyricmode {
+  Tunc ac -- cep -- ta -- bis sa -- cri -- %251
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau --
+  sta. %255 finis
+}

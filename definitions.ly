@@ -29,7 +29,8 @@ tempoLibera = \tempoMarkup "Andante"
   tempoLiberaB = \tempoMarkup "Adagio"
   tempoLiberaC = \tempoMarkup "Andante"
 tempoSacrificium = \tempoMarkup "Grave"
-% tempoBenigne = \tempoMarkup "Andante"
+tempoBenigne = \tempoMarkup "Andante"
+  tempoBenigneB = \tempoMarkup "Adagio"
 
 
 \include "notes/ob1.ly"

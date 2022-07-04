@@ -581,3 +581,58 @@ SacrificiumBassFigures = \figuremode {
   <7 _!>2 <5! 4>4 <\t _+>
   <_+>1 %233 finis
 }
+
+BenigneOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #234
+    \mvTr g4\fE-\solo-\rip r8 g' fis f r f
+    e! es r es d c16 b c8 d %235
+    g,4 r8 \mvTr g'\p-\orgE fis f r f
+    e! es r es d d, r d'
+    g g, r g' fis f r d
+    d cis r a d4 r8 d'
+    cis c r c h b r b %240
+    a g f g a g a a,
+    d4 r8 \mvTr d'\f-\rip cis c r c
+    h b r \mvTr b\p-\orgE fis4 r8 g
+    fis f r f e! es r d
+    g g, r g' fis f r f %245
+    e! es r es d d, r d''
+    cis c r c h b r b
+    a g fis4 g8 c d d,
+    \mvTr g4\f-\rip r8 g fis f r f
+    e! es r es d c16 b c8 d %250
+    g, es'-\tutti es es b2
+    h c
+    r8 c c c a2
+    b \tempoBenigneB es
+    d1\fermata \bar "||" %255 finis
+  }
+}
+
+BenigneBassFigures = \figuremode {
+  r4. <6->8 <7-> <6>4 \bo <[6]>8 %234
+  <7> <6>4 \bc <[6]>8 <7 _+> \bo <5 [_-]> \bc <\t [\t]> <_+> %235
+  r4. <6->8 <7-> <6>4 q8
+  <7> <6>4 <[6]>8 <7 _+>4. q8
+  r2 <7>8 <6>4 q8
+  <4 2>8 <6>4 <_+>8 <_!>4. <6>8
+  <7> <6>4 q8 <7> <6>4 q8 %240
+  <_+>4 \bo <[6]>8 \bc q <5 4>4 <\t _+>
+  r4. <6>8 <7> <6>4 q8
+  <7> <6>4 <[6]>8 <6>4. <6->8
+  <7-> <6>4 q8 <7> <6>4 <7 _+>8
+  \bo <[4]>4 \bc <[3]>8 <6-> <7-> <6>4 q8 %245
+  <7> <6>4 q8 <_+>4. <6 _!>8
+  <7> <6>4 <[4+ 2]>8 <7> <6>4 q8
+  <6\\>4 <6>8 \bo <[7-]>4 \bc <[7] _->8 <_+>4
+  r4. <6->8 <7-> <6>4 q8
+  <7> <6>4 q8 <7 _+> <5 _-> <\t \t> <_+> %250
+  r <5 3>4 <\t \t>8 r2
+  <6 5> <_->
+  r8 <[_-]>4. <6 5->2
+  r <7>4 <6>
+  <_+>1 %255 finis
+}

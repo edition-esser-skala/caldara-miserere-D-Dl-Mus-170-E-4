@@ -152,3 +152,17 @@ SacrificiumOboeI = {
     fis1\fermata \bar "||" %233 finis
   }
 }
+
+BenigneOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #234
+    R1*17 %250
+    r8 es'\fE es es d d d d
+    d8. d16 d8 d c8. c16 c4
+    r8 es es es es4 es8 es
+    d d d4. c16 b c4
+    d1\fermata \bar "||" %255
+  }
+}

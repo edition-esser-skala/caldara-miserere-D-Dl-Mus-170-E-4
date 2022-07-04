@@ -300,3 +300,33 @@ SacrificiumViolinoII = {
     fis1\fermata \bar "||" %233 finis
   }
 }
+
+BenigneViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #234
+    \mvTr g'8\fE-\vv g, r g' fis-! d'-! r f,
+    e!-! c'-! r es, d-! g-! a, fis' %235
+    g16( d) g( a) \slurDashed b(\p c) b( c) \slurSolid a( b) a( b) a( b) a( b)
+    g( a) g( a) g( a) g( a) \slurDashed fis( g) fis( g) fis( g) fis( a) \slurSolid
+    g8 g, r g' \parOn fis-\parenthesize-! \parOff d'-\parenthesize-! r f,
+    e!-! e'-! r cis d-! d,-! r d\f
+    cis-! a'-! r c,\p h-! g'-! r b, %240
+    \parOn a-\parenthesize-! \parOff a'-\parenthesize-! r b d,4 cis8.\trill d16
+    d8-! a'-! r d\f \parOn cis-\parenthesize-! \parOff a'-\parenthesize-! r c,
+    h? g'~ g16( a) g(\p b) a8 a, b16( c) b( c)
+    a( b) a( b) a( b) a( b) g( a) g( a) \slurDashed fis( g) fis( a) \slurSolid
+    \appoggiatura e!8 d4 r8 g fis-! d'-! r f, %245
+    \parOn e!-\parenthesize-! \parOff c'-\parenthesize-! r es, d4 r8 d'\f
+    cis-! a'-! r c,\p h-! g'-! r b,
+    \parOn fis-\parenthesize-! \parOff g-\parenthesize-! r a g4 fis8.\trill g16
+    g8\f g, r g' fis-! d'-! r f,
+    e!-! c'-! r es, \parOn d-\parenthesize-! \parOff g-\parenthesize-! a, fis' %250
+    g g'16 f! es8 b b b b b
+    g8. g16 g8 g g8. g16 g4
+    r8 c c c c4 c8 c
+    b4 b \tempoBenigneB b es
+    a,1\fermata \bar "||" %255 finis
+  }
+}

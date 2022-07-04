@@ -387,3 +387,25 @@ SacrificiumBassoLyrics = \lyricmode {
   _ _ ci --
   es. %233 finis
 }
+
+BenigneBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoBenigne
+      \set Score.currentBarNumber = #234
+    R1*17 %250
+    r8 \mvTr es\fE^\tuttiE es es b b b b
+    h8. h16 h8 h c8. c16 c4
+    r8 c c c a4 a8 a
+    b4 b \tempoBenigneB es2
+    d1\fermata \bar "||" %255 finis
+  }
+}
+
+BenigneBassoLyrics = \lyricmode {
+  Tunc ac -- cep -- ta -- bis sa -- cri -- %251
+  fi -- ci -- um iu -- sti -- ti -- ae,
+  ob -- la -- ti -- o -- nes et
+  ho -- lo -- cau --
+  sta. %255 finis
+}

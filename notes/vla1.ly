@@ -208,3 +208,25 @@ SacrificiumViolaI = {
     d1\fermata \bar "||" %233 finis
   }
 }
+
+BenigneViolaI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoBenigne
+      \set Score.currentBarNumber = #234
+    g'8\fE g, r g' \parOn fis-\parenthesize-! a-! r f
+    e!-! \parOff g-\parenthesize-! r es d c16 b c8 a %235
+    g4 r r2
+    R1*5 %241
+    r4 r8 d'\fE cis-! e-! r c
+    \parOn h?-\parenthesize-! \parOff d-\parenthesize-! r b?\pE fis4 r
+    R1*5 %248
+    g'8\fE g, r g' fis-! a-! r f
+    e!-! g-! r es? d c16 b c8 a %250
+    g g'16 f! g8 g f f f f
+    f8. f16 f8 f es8. es16 es4
+    r8 g g g f4 f8 f
+    f4 f \tempoBenigneB g2
+    fis1\fermata \bar "||" %255 finis
+  }
+}
