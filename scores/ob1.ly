@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "ob 1")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,20 +12,12 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \MiserereViolinoI
+          \set Staff.instrumentName = "Oboe I"
+          \MiserereOboeI
         }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Et secundum multitudinem"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \EtSecundumViolinoI }
-      >>
-    }
+    \tacet "Et secundum multitudinem"
   }
   \bookpart {
     \subsection "Tibi soli peccavi"
@@ -33,38 +25,21 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \TibiSoliViolinoI }
+        \new Staff { \TibiSoliOboeI }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Ecce enim veritatem"
-    \addTocEntry
-    \paper { systems-per-page = #5 }
-    \score {
-      <<
-        \new Staff { \EcceEnimViolinoI }
-      >>
-    }
+    \tacet "Ecce enim veritatem"
   }
   \bookpart {
     \subsection "Auditui meo"
     \addTocEntry
-    \paper { systems-per-page = #3 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \AudituiViolinoI }
+        \new Staff { \AudituiOboeI }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Averte faciem tuam"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \AverteViolinoI }
-      >>
-    }
+    \tacet "Averte faciem tuam"
   }
   \bookpart {
     \subsection "Redde mihi lætitiam"
@@ -72,16 +47,17 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \ReddeViolinoI }
+        \new Staff { \ReddeOboeI }
       >>
     }
   }
   \bookpart {
     \subsection "Libera me"
     \addTocEntry
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \LiberaViolinoI }
+        \new Staff { \LiberaOboeI }
       >>
     }
   }
@@ -91,17 +67,17 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SacrificiumViolinoI }
+        \new Staff { \SacrificiumOboeI }
       >>
     }
   }
   \bookpart {
     \subsection "Benigne fac Domine"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #2 }
     \score {
       <<
-        \new Staff { \BenigneViolinoI }
+        \new Staff { \BenigneOboeI }
       >>
     }
   }
@@ -110,7 +86,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \TuncViolinoI }
+        \new Staff { \TuncOboeI }
       >>
     }
   }

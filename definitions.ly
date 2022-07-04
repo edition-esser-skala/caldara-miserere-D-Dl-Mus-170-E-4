@@ -5,12 +5,27 @@
 #(define option-print-all-bar-numbers #f)
 \include "ees.ly"
 
+
 rip = \markup \remark "Rip."
 ripE = \markup \remarkE "Rip."
 senzaRip = \markup \remark "senza Rip."
 adlibitum = \markup \remark "ad libitum"
 adlibitumE = \markup \remarkE "ad libitum"
 vv = \markup \remark "Vv."
+
+tacet = #(define-scheme-function
+  (parser location title)
+  (string?)
+  (markup
+    #:vspace 10
+    #:fontsize 4
+    #:fill-line (
+      ""
+      #:center-column (title #:italic "tacet" )
+      ""
+    )
+  ))
+
 
 
 tempoMiserere = \tempoMarkup "Adagio"

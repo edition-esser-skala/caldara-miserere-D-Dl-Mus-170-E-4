@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \MiserereViolinoI
+          \set Staff.instrumentName = "Violino II"
+          \MiserereViolinoII
         }
       >>
     }
@@ -23,7 +23,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtSecundumViolinoI }
+        \new Staff { \EtSecundumViolinoII }
       >>
     }
   }
@@ -33,7 +33,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \TibiSoliViolinoI }
+        \new Staff { \TibiSoliViolinoII }
       >>
     }
   }
@@ -43,7 +43,7 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \EcceEnimViolinoI }
+        \new Staff { \EcceEnimViolinoII }
       >>
     }
   }
@@ -53,7 +53,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \AudituiViolinoI }
+        \new Staff { \AudituiViolinoII }
       >>
     }
   }
@@ -62,7 +62,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AverteViolinoI }
+        \new Staff { \AverteViolinoII }
       >>
     }
   }
@@ -72,7 +72,7 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \ReddeViolinoI }
+        \new Staff { \ReddeViolinoII }
       >>
     }
   }
@@ -81,7 +81,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \LiberaViolinoI }
+        \new Staff { \LiberaViolinoII }
       >>
     }
   }
@@ -91,7 +91,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \SacrificiumViolinoI }
+        \new Staff { \SacrificiumViolinoII }
       >>
     }
   }
@@ -101,7 +101,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \BenigneViolinoI }
+        \new Staff { \BenigneViolinoII }
       >>
     }
   }
@@ -110,7 +110,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \TuncViolinoI }
+        \new Staff { \TuncViolinoII }
       >>
     }
   }
