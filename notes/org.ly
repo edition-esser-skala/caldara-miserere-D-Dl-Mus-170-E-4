@@ -202,20 +202,20 @@ EcceEnimOrgano = {
     \key b \major \time 3/2 \tempoEcceEnim
       \override Staff.TimeSignature.style = #'single-digit
       \set Score.currentBarNumber = #80
-    \mvTr b4\pE-\solo-\orgE d f b,-\rip d f
-    b, d-\org f b, c d
+    \mvTr b4\pE-\solo-\orgE d f \mvTr b,\fE-\rip d f
+    b, \mvTr d\pE-\org f b, c d
     es e e f a c
     f, a f g g, c
     f f, b es a, c
     d4. c8[ b a] g'4. f8 es d %85
     c2. d2 b4
-    c d d, g'4.-\rip f!8 es d
+    c d d, \mvTr g'4.\fE-\rip f!8 es d
     c4 c' c, d8[ c b a] g4
-    c d d, g f'!-\orgE es
+    c d d, g \mvTr f'!\pE-\orgE es
     d2 es4 f g a %90
     b2 b4 es,2 d4
-    c2. b4 d-\rip e
-    f b,-\org c f b, c
+    c2. b4 \mvTr d\fE-\rip e
+    f \mvTr b,\pE-\org c f b, c
     f g g, c f g
     c,2 r4 c' b! as %95
     g2 as4 b as g
