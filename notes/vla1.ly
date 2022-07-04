@@ -230,3 +230,49 @@ BenigneViolaI = {
     fis1\fermata \bar "||" %255 finis
   }
 }
+
+TuncViolaI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 6/2 \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    d2\mp r r g, r r
+    es' r r f r r
+    f r r f r r
+    es r r d r r
+    d g f!4 g a2 a,1 %260
+    d2 f\f f f f r
+    r a a a2. g4 g2
+    g g g g fis r
+    \tempoTuncB R\breve.*2 %265
+    r1 r2 g1 g2
+    g g4 g g g g2 f es
+    d g, d' a'4 b a g f e
+    f2. g4 a2~ a g f
+    e2. f4 g2~ g fis g~ %270
+    g fis1 g4 a g f es d
+    es1 d2 c a' g
+    fis g f? e1.
+    d r1 r2
+    R\breve. %275
+    g1 g2 g g4 g g g
+    g2 f es d a a'
+    g2. a4 g f g2 es f
+    f1 f2 f f4 f f f
+    f2 es d c2. d4 e2 %280
+    f c r r1 r2
+    R\breve.
+    g'4 a g f es d es2. f4 g2
+    c, d es f g1
+    g r2 r1 r2 %285
+    f4 g f es d c b2 c d
+    es2. d4 c2 d a r
+    r1 r2 g'4 a g f e d
+    e2 fis g~ g fis a~
+    a d, g~ g fis1 %290
+    g g2 g g4 g g g
+    \tempoTuncC g1 g2 g1.
+    g\breve*3/2\fermata \bar "|." %293 finis
+  }
+}

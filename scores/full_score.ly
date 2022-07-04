@@ -669,8 +669,88 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Benigne fac Domine"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \BenigneOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \BenigneOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \BenigneViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \BenigneViolinoII
+  %           }
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vla"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \BenigneViolaI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \BenigneViolaII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \BenigneSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \BenigneSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \BenigneAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \BenigneAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \BenigneTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \BenigneBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \BenigneOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \BenigneBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 70 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Benigne fac Domine"
+    \subsection "Tunc imponent"
     \addTocEntry
     \score {
       <<
@@ -679,11 +759,11 @@
             \set GrandStaff.instrumentName = "ob"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \BenigneOboeI
+              \TuncOboeI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \BenigneOboeII
+              \TuncOboeII
             }
           >>
         >>
@@ -692,61 +772,61 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \BenigneViolinoI
+              \TuncViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \BenigneViolinoII
+              \TuncViolinoII
             }
           >>
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vla"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \BenigneViolaI
+              \TuncViolaI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \BenigneViolaII
+              \TuncViolaII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \BenigneSoprano }
+            \new Voice = "Soprano" { \dynamicUp \TuncSoprano }
           }
-          \new Lyrics \lyricsto Soprano \BenigneSopranoLyrics
+          \new Lyrics \lyricsto Soprano \TuncSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \BenigneAlto }
+            \new Voice = "Alto" { \dynamicUp \TuncAlto }
           }
-          \new Lyrics \lyricsto Alto \BenigneAltoLyrics
+          \new Lyrics \lyricsto Alto \TuncAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \BenigneTenore }
+            \new Voice = "Tenore" { \dynamicUp \TuncTenore }
           }
-          \new Lyrics \lyricsto Tenore \BenigneTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TuncTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \BenigneBasso }
+            \new Voice = "Basso" { \dynamicUp \TuncBasso }
           }
-          \new Lyrics \lyricsto Basso \BenigneBassoLyrics
+          \new Lyrics \lyricsto Basso \TuncBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
-            % \transpose c c,
-            \BenigneOrgano
+            \transpose c c,
+            \TuncOrgano
           }
         >>
-        \new FiguredBass { \BenigneBassFigures }
+        \new FiguredBass { \TuncBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 70 }
+      \midi { \tempo 2 = 110 }
     }
   }
 }

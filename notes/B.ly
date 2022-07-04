@@ -409,3 +409,77 @@ BenigneBassoLyrics = \lyricmode {
   ho -- lo -- cau --
   sta. %255 finis
 }
+
+TuncBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 3/2 \autoBeamOff \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    r1 r2 r \mvTr g'\pE^\soloE d
+    es c r c a'4 g f es
+    d es f2. f4 b,1.
+    R\breve.*2 %260
+    r2 \mvTr b!\fE^\tuttiE b f' f r
+    r fis d g2. g,4 g2
+    g' b g d' d, r
+    \tempoTuncB R\breve.*7 %270
+    r1 r2 g1 g2
+    g g4 g g g g2( f) es
+    d g, d' a'4 b a g f e
+    f2. g4 a2~ a g f
+    e!2. fis4 g2~ g fis1 %275
+    g4 a g f es d es1  e2
+    f1. fis
+    g4 a g f es d es2 c f
+    b,1 r2 b'1 b2
+    b b4 b b b b2( a) g %280
+    f2.( g4 a2 b) b, r
+    R\breve.
+    g'1 g2 g g4 g g g
+    g2( f) es d g, g'
+    c,1. f4 g f es d c %285
+    d2. es4 f2~ f es d
+    c2. d4 es2 d1.
+    d'1 d2 d d4 d d d
+    d2( c) b a1 d2
+    g,4 fis g a b c d c d1 %290
+    g,2 g g es1 h2
+    \tempoTuncC c1.~ c
+    g\breve*3/2\fermata \bar "|." %293 finis
+  }
+}
+
+TuncBassoLyrics = \lyricmode {
+  Tunc im -- %256
+  po -- nent su -- per al -- ta -- re
+  tu -- um vi -- tu -- los.
+
+  Si -- cut e -- rat %261
+  in prin -- ci -- pi -- o
+  et nunc et sem -- per
+
+  et in %271
+  sae -- cu -- la sae -- cu -- lo -- rum,
+  a -- men, a -- _ _ _ _ _ _
+  _ _ _ _ _
+  _ _ _ men, %275
+  a -- _ _ _ _ _ _ _
+  _ _
+  _ _ _ _ _ _ _ _ _
+  men, et in
+  sae -- cu -- la sae -- cu -- lo -- rum, %2809
+  a -- men,
+
+  et in sae -- cu -- la sae -- cu --
+  lo -- rum, a -- men, a --
+  men, a -- _ _ _ _ _ %285
+  _ _ _ _ _
+  _ _ _ men,
+  et in sae -- cu -- la sae -- cu --
+  lo -- rum, a -- men,
+  a -- _ _ _ _ _ _ _ _ %290
+  men, a -- men, a -- men,
+  a --
+  men. %293 finis
+}

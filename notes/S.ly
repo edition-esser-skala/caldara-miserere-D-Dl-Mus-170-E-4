@@ -356,12 +356,6 @@ SacrificiumSopranoLyrics = \lyricmode {
   es. %233 finis
 }
 
-
-% tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
-
 BenigneSoprano = {
   \relative c' {
     \clef treble
@@ -412,4 +406,83 @@ BenigneSopranoLyrics = \lyricmode {
   ob -- la -- ti -- o -- nes et
   ho -- lo -- cau --
   sta. %255 finis
+}
+
+TuncSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/2 \autoBeamOff \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    R\breve.*3
+    r1 r2 r \mvTr d'4(\pE^\soloE c) b( a)
+    h2 cis d~ d cis1 %260
+    d2 \mvTr b\fE^\tuttiE b b a r
+    r c c c2. b4 b2
+    b b b b a r
+    \tempoTuncB d1 d2 d d4 d d d
+    d2( c) b a d, g %265
+    d'4 es d c b a b2. c4 d2~
+    d c b a2. b4 c2~
+    c b d~ d cis1
+    d4 es d c b a b1 a2
+    g a b c1 b2 %270
+    a1. g
+    R\breve.*3
+    r1 r2 d'1 d2 %275
+    d d4 d d d d2( c) b!
+    a a a d4 es d c b a
+    b1.~ b1 a2
+    b1 r2 r1 r2
+    r1 r2 c4 d c b a g %280
+    a2. b4 c2~ c b a
+    g a b~ b a c~
+    c b d~ d c b
+    a h c~ c h1
+    c4 d c b as g as2. b4 c2 %285
+    R\breve.
+    r1 r2 d1 d2
+    d d4 d d d d2( c) b~
+    b a b c1.
+    b a %290
+    h2 h h c1 d2
+    \tempoTuncC es1.~ es
+    d\breve*3/2\fermata \bar "|." %293 finis
+  }
+}
+
+TuncSopranoLyrics = \lyricmode {
+  Et Spi -- %259
+  ri -- tu -- i __ San -- %260
+  cto. Si -- cut e -- rat
+  in prin -- ci -- pi -- o
+  et nunc et sem -- per
+  et in sae -- cu -- la sae -- cu --
+  lo -- rum, a -- men, a -- %265
+  _ _ _ _ _ _ _ _ _
+  _ _ _ _ _
+  _ _ men,
+  a -- _ _ _ _ _ _ _
+  _ _ _ _ men, %270
+  a -- men,
+
+  et in %275
+  sae -- cu -- la sae -- cu -- lo -- rum,
+  a -- men, a -- _ _ _ _ _ _
+  _ _
+  men,
+  a -- _ _ _ _ _ %280
+  _ _ _ _ _
+  _ _ _ _ _
+  _ _ _ _
+  _ _ _ men,
+  a -- _ _ _ _ _ _ _ men, %285
+
+  et in
+  sae -- cu -- la sae -- cu -- lo -- rum, __
+  a -- _ _
+  _ _ %290
+  men, a -- men, a -- _
+  _
+  men. %293 finis
 }

@@ -229,3 +229,49 @@ BenigneViolaII = {
     fis1\fermata \bar "||" %255 finis
   }
 }
+
+TuncViolaII = {
+  \relative c' {
+    \clef tenor
+    \key g \dorian \time 6/2 \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    d2\mp r r g, r r
+    c, r r f r r
+    b r r b r r
+    c r r d r r
+    d g f!4 g a2 a,1 %260
+    d,2 d'\f d d c r
+    r d d d2. d4 d2
+    d d d d d r
+    \tempoTuncB R\breve.*2 %265
+    r1 r2 g1 g2
+    g g4 g g g g2 f es
+    d g, d' a'4 b a g f e
+    d1 d2 d d4 d d d
+    d2 c b a d, g %270
+    d'4 es d c b a b2. c4 d2~
+    d c b a2. b4 c2~
+    c b d~ d cis1
+    d4 es d c b a b2. c4 d2~
+    d c b a d4 es d c %275
+    b a b2 h c1.~
+    c1 c2 d1 d2
+    d d4 d d d c c c1
+    d1 r2 r1 r2
+    R\breve. %280
+    f4 g f es d c d2. es4 \once \tieDashed f2~
+    f es d c2. d4 es2
+    d1. b2 c d
+    es d c d1 d2
+    c1 c2 c c4 c c c %285
+    c2. b4 as2 g2. as4 b2~
+    b a g fis1.
+    d'4 es d c b a b2. c4 d2
+    g, c d c1 d2
+    d1.~ d %290
+    d2 d d c1 g2
+    \tempoTuncC \once \tieDashed c1.~ c
+    h\breve*3/2\fermata \bar "|." %293 finis
+  }
+}

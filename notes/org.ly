@@ -636,3 +636,107 @@ BenigneBassFigures = \figuremode {
   r <7>4 <6>
   <_+>1 %255 finis
 }
+
+TuncOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 6/2 \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    \mvTr fis1.\pE-\solo g1 g,2
+    c1. f,
+    b2 f' f, b1.
+    c d
+    g2 e d a'1 a,2 %260
+    d \mvTr b!\fE-\tutti b f' f, r
+    r fis' d g2. g,4 g2
+    g' b g d d, r
+    \clef treble \tempoTuncB d'''1 d2 d d4 d d d
+    d2 c b a d, g %265
+    d'4 es d c b a << {
+      b2. c4 d2~
+      d c b a2. b4 c2~
+      c b d~ d cis1
+    } \\ {
+      g1 g2
+      g g4 g g g g2 f es
+      d g, d' a'4 b a g f e
+    } >>
+    \clef "treble_8" d1 d2 d d4 d d d
+    d2 c b a d, g %270
+    d'4 es d c b a \clef bass g1 g2
+    g g4 g g g g2 f es
+    d g, d' a'4 b a g f e
+    << {
+      s1. b'2. c4 d2~
+      d c b
+    } \\ {
+      \oneVoice f2. g4 a2~ \voiceTwo a g f
+      e!2. fis4 g2
+    } >> d1. %275
+    g,2 g' g, c1 c2
+    f1. fis
+    g4 a g f es d es2 c f
+    b,1 a2 b'1 b2
+    b b4 b b b b2 a g %280
+    f2. g4 a2 b b, \clef "treble_8" << {
+      a''
+      g a b~ b a c
+    } \\ {
+      f,~
+      f es d c2. d4 es2
+    } >>
+    \clef bass g,1 g2 g g4 g g g
+    g2 f es d g,1
+    c1. f4 g f es d c %285
+    d2. es4 f2~ f es d
+    c2. d4 es2 d1.
+    d1 d2 d d4 d d d
+    d2 c b a1 d2
+    g,4 fis g a b c d1. %290
+    g,2 g' g es1 h2
+    \tempoTuncC c1.~ c
+    g\breve*3/2\fermata \bar "|." %293 finis
+  }
+}
+
+TuncBassFigures = \figuremode {
+  \bo <[6]>\breve. %256
+  \bc <[_-]>
+  r
+  <6 5 [_-]>1. <5 _+>
+  <_!>2 <6\\> <[_!]> <6 4> <5 _+> <\t \t> %260
+  r <5>1 <6 4>2 <5 3>1
+  r2 \bo <[6 5]> <\t \t> <9 4>2. \bc <[8 3]>
+  r1. <6 4>2 <5 _+>1
+  r\breve.
+  r %265
+  r
+  r
+  r
+  <5 _!>1. <6 5>2 <\t 4> <5 3>
+  <4 2> <6>2 <[6]> <7> <_+>1 %270
+  <5 4>4 \bassFigureExtendersOn q <5 _+>2. q4 \bassFigureExtendersOff r1.
+  \bo <[6- 5]>2 <\t 4> <5 3> \bc <[4 2]>1 <6>2
+  <7 _+>1 <_!>2 <5! 4>4 \bassFigureExtendersOn q <5! _+>2. q4 \bassFigureExtendersOff
+  <6>\breve.
+  r1. <5 4>2 <\t _+>1 %275
+  <5 3>2 <\t \t> <_!> <9 _-> <[8] \t> <7- _!>
+  <9> <8> <[7-]> <6>1.
+  <5 3>1 \bassFigureExtendersOn q4 q \bassFigureExtendersOff <[6 5]>2 <[7] _->1
+  r <6>2 <5>1.
+  \bo <[5]>2 <4-> <3> <2> \bc <[6]> <6!> %280
+  r1 <[6]>2 <9 3> <8 \t>1
+  r\breve.
+  <5 4>2 <\t 3>1 <[6- 5]>2 <\t 4> <5 3>
+  <6- [4 2]> <6 4!> <6> <7> <_!>1
+  <[_-]>1. <_->1 \bassFigureExtendersOn q4 q \bassFigureExtendersOff %285
+  <7>2. \bo <[5 \l]>4 <6 _-> \bc <[5 \t]> <4 2>2 <6> <[6]>
+  \bo <[7] _-> \bc <6 \t> \bc <[6]> <_+>1.
+  <5 _+> <6 4>
+  <6 4 2>2 <6 4+ 2> <6> <7> <6\\> <_+>
+  <9> <8>1 <4>2 <_+>1 %290
+  <5 _!> <\t \t>2 <6>1 q2
+  <5 _->\breve.
+  <5 _!> %293 finis
+}

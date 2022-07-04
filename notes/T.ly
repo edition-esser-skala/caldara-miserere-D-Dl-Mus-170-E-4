@@ -377,3 +377,81 @@ BenigneTenoreLyrics = \lyricmode {
   ho -- lo -- cau --
   sta. %255 finis
 }
+
+TuncTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 3/2 \autoBeamOff \tempoTunc
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #256
+    r2 \mvTr d\pE^\soloE a b g r
+    g es'4 d c b a2 f1
+    b2( a2.) b4 b1.
+    R\breve.*2 %260
+    r2 \mvTr d\fE^\tuttiE d d c r
+    r d d d2. d4 d2
+    d d d d d r
+    \tempoTuncB R\breve.*5 %268
+    d1 d2 d d4 d d d
+    d2( c) b a d, g %270
+    d'4 es d c b a b2. c4 d2~
+    d c b a2. b4 c2~
+    c b d~ d cis1
+    d4 es d c b a b2. c4 d2~
+    d c b a d4 es d c %275
+    b a b2 h c1.~
+    c1 c2 d1 d2
+    d d4 d d d c c c1
+    d1 r2 r1 r2
+    R\breve. %280
+    f4 g f es d c d2. es4 \once \tieDashed f2~
+    f es d c2. d4 es2
+    d1. b2 c d
+    es d c d1 d2
+    c1 c2 c c4 c c c %285
+    c2.( b4) as2 g2. as4 b2~
+    b a g fis1.
+    d'4 es d c b a b2. c4 d2
+    g, c d c1 d2
+    d1.~ d %290
+    d2 d d c1 g2
+    \tempoTuncC \once \tieDashed c1.~ c
+    h\breve*3/2\fermata \bar "|." %293 finis
+  }
+}
+
+TuncTenoreLyrics = \lyricmode {
+  Tunc im -- po -- nent %256
+  su -- per al -- ta -- re tu -- um
+  vi -- tu -- los.
+
+  Si -- cut e -- rat %261
+  in prin -- ci -- pi -- o
+  et nunc et sem -- per
+
+  et in sae -- cu -- la sae -- cu -- %269
+  lo -- rum, a -- men, a -- %270
+  _ _ _ _ _ _ _ _ _
+  _ _ _ _ _
+  _ _ men,
+  a -- _ _ _ _ _ _ _ _
+  _ _ men, a -- _ _ _ %275
+  _ _ _ men, a --
+  men, et in
+  sae -- cu -- la sae -- cu -- lo -- rum, a --
+  men,
+  %280
+  a -- _ _ _ _ _ _ _ _
+  _ _ _ _ _
+  _ _ _ _
+  _ _ _ _ men,
+  et in sae -- cu -- la sae -- cu -- %285
+  lo -- rum, a -- _ _
+  _ _ men,
+  a -- _ _ _ _ _ _ _ _
+  _ _ _ _ men,
+  a -- %290
+  men, a -- men, a -- men,
+  a --
+  men. %293 finis
+}
